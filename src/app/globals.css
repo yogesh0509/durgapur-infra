@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Durgapur Infra Projects Pvt. Ltd. Theme using Tailwind 4.1 @theme variables */
+@theme {
+  --color-background: #F3F4F6; /* soft neutral */
+  --color-foreground: #1F2937; /* dark industrial gray */
+  --color-card: #F9FAFB;
+  --color-card-foreground: #1F2937;
+  --color-popover: #F9FAFB;
+  --color-popover-foreground: #1F2937;
+
+  --color-primary: rgb(0, 36, 125); /* #00247D - Pantone 280C */
+  --color-primary-foreground: #F3F4F6;
+
+  --color-secondary: #1F2937;
+  --color-secondary-foreground: #F3F4F6;
+
+  --color-muted: #E5E7EB;
+  --color-muted-foreground: #6B7280;
+  --color-accent: #991b1b; /* deeper, industrial red */
+  --color-accent-foreground: #F3F4F6;
+
+  --color-footer: #111827; /* dark steel footer */
+  --color-footer-foreground: #E5E7EB;
+
+  --color-destructive: #B00020;
+  --color-border: #E5E7EB;
+  --color-input: #E5E7EB;
+  --color-ring: rgb(0, 36, 125);
+
+  --color-chart-1: rgb(0, 36, 125);
+  --color-chart-2: rgb(207, 20, 43);
+  --color-chart-3: #1F2937;
+  --color-chart-4: #F3F4F6;
+  --color-chart-5: #6B7280;
+
+  --color-sidebar: #F9FAFB;
+  --color-sidebar-foreground: #1F2937;
+  --color-sidebar-primary: rgb(0, 36, 125);
+  --color-sidebar-primary-foreground: #F3F4F6;
+  --color-sidebar-accent: rgb(207, 20, 43);
+  --color-sidebar-accent-foreground: #F3F4F6;
+  --color-sidebar-border: #E5E7EB;
+  --color-sidebar-ring: rgb(0, 36, 125);
+
+  --color-accent-blue: rgb(0, 36, 125);
+  --color-accent-lavender: #F3F4F6;
+  --color-foreground-strong: #1F2937;
+
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Fonts */
+  --font-display: 'Merriweather', 'Roboto Slab', serif;
+  --font-sans: 'Inter', 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Tailwind layers and custom classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-3 sm:px-4 lg:px-6 mx-auto w-full max-w-6xl;
+  }
+
+  /* tighter, more industrial section padding */
+  .section-padding {
+    @apply py-10 sm:py-12 lg:py-16;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:transform hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  /* footer style */
+  .footer {
+    @apply bg-[var(--color-footer)] text-[var(--color-footer-foreground)] border-t border-border py-8 sm:py-10;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground leading-relaxed;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    @apply tracking-tight font-light;
+  }
+
+  h1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-muted-foreground;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out; }
+.animate-fade-in-scale { animation: fadeInScale 0.5s ease-out; }
+.animate-slide-in-left { animation: slideInLeft 0.6s ease-out; }
+.animate-slide-in-right { animation: slideInRight 0.6s ease-out; }
+.animate-pulse-slow { animation: pulse 2s ease-in-out infinite; }
+
+.header-on-hero {
+  color: #fff !important;
+}
+.header-on-hero .text-foreground,
+.header-on-hero .text-foreground\/80,
+.header-on-hero .text-muted-foreground,
+.header-on-hero nav a,
+.header-on-hero .font-display,
+.header-on-hero p {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.header-on-hero .hover\:text-foreground:hover {
+  color: #fff !important;
+}

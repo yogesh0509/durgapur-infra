@@ -1,0 +1,288 @@
+{
+  "brandName": "Durgapur Infra Projects Pvt. Ltd.",
+  "shortName": "DIPPL",
+  "tagline": "Precision Ductile Iron Manufacturing for Modern Infrastructure",
+  "description": "Specializing in manhole covers, automobile parts, and custom castings.",
+  "companyInfo": {
+    "cin": "U26999WB2016PTC218534",
+    "pan": "AAGCD0726K",
+    "incorporated": "07 December 2016",
+    "type": "Private Limited Company"
+  },
+  "about": {
+    "founded": "2016",
+    "capacity": "7,200 MTPA",
+    "industry": "Foundry & Ductile Iron Casting",
+    "summary": "Durgapur Infra Projects Pvt. Ltd. operates a state-of-the-art ductile iron facility specializing in manhole covers, automobile parts, and custom castings. Founded in 2016 by industry veterans Manoj and Neeraj Garg, DIPPL combines technical excellence with operational efficiency.",
+    "promoters": [
+      {
+        "name": "Mr. Manoj Garg",
+        "experience": "25+ years",
+        "focus": "Administration, Legal, HR, Finance, Expansion"
+      },
+      {
+        "name": "Mr. Neeraj Garg",
+        "experience": "20+ years",
+        "focus": "Sales, Marketing, Corporate Growth"
+      }
+    ],
+    "coreActivities": "Operate a state-of-the-art ductile iron manufacturing facility in Durgapur. Specialize in manhole covers, automobile parts, and other ductile iron castings using semi-automatic green sand molding process for precision and efficiency."
+  },
+  "factory": {
+    "address": "JL. No. 58, Gopalpur Gram Panchayat, P.S. Kanksa, Village Bamunara, Dist. Paschim Bardhaman, West Bengal – 713212",
+    "process": "Green Sand Molding with semi-automatic setup ensuring precision and high throughput.",
+    "location": "Situated in Paschim Bardhaman, West Bengal. Connected via rail, road, highways. ~150 km from Howrah Railway Station & Kolkata Airport."
+  },
+  "expansion": {
+    "projectCost": "₹7.38 Cr",
+    "capacity": "7,200 MTPA",
+    "completion": "April 2025",
+    "promotersContribution": "₹1.13 Cr",
+    "termLoan": "₹6.25 Cr"
+  },
+  "products": [
+    {
+      "id": "municipal-casting",
+      "title": "Municipal Casting of Gray and Ductile Iron",
+      "description": "High-strength, corrosion-resistant municipal castings built to IS standards. Our precision manufacturing ensures durability and reliability for urban infrastructure.",
+      "features": [
+        "IS Standard compliant",
+        "High corrosion resistance",
+        "Precision engineered",
+        "Durable construction"
+      ],
+      "category": "municipal"
+    },
+    {
+      "id": "ingot-moulds",
+      "title": "Cast Iron Ingot Moulds and Centre Columns",
+      "description": "Precision-molded ingot moulds for metallurgical industries. Engineered for consistent performance and extended service life.",
+      "features": [
+        "Precision molding",
+        "Metallurgical grade",
+        "Extended service life",
+        "Consistent performance"
+      ],
+      "category": "metallurgical"
+    },
+    {
+      "id": "railway-casting",
+      "title": "Locomotive / Railway Castings",
+      "description": "Custom iron castings for locomotive and rail infrastructure. Built to meet stringent railway specifications and safety standards.",
+      "features": [
+        "Railway specifications",
+        "Safety compliant",
+        "Custom solutions",
+        "High reliability"
+      ],
+      "category": "railway"
+    }
+  ],
+  "infrastructure": {
+    "manufacturing": {
+      "title": "Manufacturing Infrastructure",
+      "description": "Automated molding lines, induction furnaces, shot blasting, and fettling units. State-of-the-art equipment ensuring precision and efficiency.",
+      "features": [
+        "Automated molding lines",
+        "Induction furnaces",
+        "Shot blasting units",
+        "Fettling operations",
+        "Semi-automatic setup"
+      ]
+    },
+    "testing": {
+      "title": "Testing & Inspection Infrastructure",
+      "description": "In-house metallurgical lab with spectrometer, tensile testing, and hardness analysis. Comprehensive quality control at every stage.",
+      "features": [
+        "Metallurgical laboratory",
+        "Spectrometer analysis",
+        "Tensile testing",
+        "Hardness analysis",
+        "Quality control systems"
+      ]
+    },
+    "it": {
+      "title": "IT Infrastructure",
+      "description": "ERP-integrated systems for process monitoring and quality tracking. Digital transformation for operational excellence.",
+      "features": [
+        "ERP integration",
+        "Process monitoring",
+        "Quality tracking",
+        "Digital systems",
+        "Data analytics"
+      ]
+    },
+    "design": {
+      "title": "Design & Development",
+      "description": "CAD-based design & simulation for prototype and mass casting. Innovation-driven approach to product development.",
+      "features": [
+        "CAD design systems",
+        "Simulation capabilities",
+        "Prototype development",
+        "Innovation focus",
+        "Technical expertise"
+      ]
+    }
+  },
+  "quality": {
+    "assurance": {
+      "title": "Quality Assurance",
+      "description": "Stringent QA checks at every stage of production. From raw material inspection to final product testing.",
+      "features": [
+        "Stage-wise quality checks",
+        "Raw material inspection",
+        "Process monitoring",
+        "Final product testing",
+        "Continuous improvement"
+      ]
+    },
+    "laboratory": {
+      "title": "Our Laboratory",
+      "description": "Equipped for chemical, mechanical, and microstructure analysis. Advanced testing capabilities ensuring product excellence.",
+      "features": [
+        "Chemical analysis",
+        "Mechanical testing",
+        "Microstructure analysis",
+        "Advanced equipment",
+        "Certified testing"
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "description": "ISO certified operations ensuring international quality standards. Committed to excellence and continuous improvement.",
+      "features": [
+        "ISO 9001:2015",
+        "ISO 14001:2015",
+        "Quality management",
+        "Environmental standards",
+        "Continuous certification"
+      ]
+    }
+  },
+  "manufacturingProcess": [
+    {
+      "step": "Green Sand Molding",
+      "description": "Preparation of molds using green sand process"
+    },
+    {
+      "step": "Melting",
+      "description": "Melt pig iron & scrap in induction furnaces"
+    },
+    {
+      "step": "Treatment",
+      "description": "Magnesium treatment for ductile iron properties"
+    },
+    {
+      "step": "Inoculation",
+      "description": "Ferro silicon inoculation for grain refinement"
+    },
+    {
+      "step": "Pouring",
+      "description": "Precision pouring into prepared molds"
+    },
+    {
+      "step": "Cooling",
+      "description": "Controlled cooling for optimal properties"
+    },
+    {
+      "step": "Knockout",
+      "description": "Removal of castings from molds"
+    },
+    {
+      "step": "Fettling & Grinding",
+      "description": "Cleaning and finishing operations"
+    },
+    {
+      "step": "Shot Blasting",
+      "description": "Surface preparation and cleaning"
+    },
+    {
+      "step": "Painting",
+      "description": "Protective coating application"
+    },
+    {
+      "step": "Final Inspection",
+      "description": "Quality control and testing"
+    },
+    {
+      "step": "Dispatch",
+      "description": "Packaging and delivery"
+    }
+  ],
+  "rawMaterials": [
+    "Pig Iron",
+    "Steel Scrap",
+    "Foundry Returns",
+    "Carburizers",
+    "Ferro Silico Manganese",
+    "Manganese Inoculators"
+  ],
+  "utilities": {
+    "power": "1 MW (WBSEDCL)",
+    "water": "Deep tube wells / bore wells",
+    "fuel": "Furnace Oil & LDO (Indian Oil Corporation)",
+    "safety": "IS:2190-92 compliant fire systems"
+  },
+  "groupCompanies": [
+    {
+      "name": "Shri Bhagatjee Ispat Ltd.",
+      "business": "Coal, MS bars, TMT rebars trading"
+    },
+    {
+      "name": "Rakesh Minerals Pvt. Ltd.",
+      "business": "Coal trading"
+    },
+    {
+      "name": "Shri Bhagatjee Alloys Pvt. Ltd.",
+      "business": "Investment company"
+    }
+  ],
+  "industryContext": {
+    "turnover": "~USD 20B",
+    "exports": "~USD 4B",
+    "sectors": {
+      "automotive": "32%",
+      "pipesFittings": "9%",
+      "agriculture": "8%",
+      "sanitaryWare": "8%",
+      "others": "43%"
+    },
+    "position": "India = 2nd largest casting producer globally (12.49M tonnes)"
+  },
+  "contact": {
+    "office": {
+      "address": "6, Brabourne Road, 3rd Floor, Room 305–306, Kolkata, West Bengal – 700001",
+      "type": "Registered Office"
+    },
+    "factory": {
+      "address": "JL No. 58, Gopalpur Gram Panchayat, P.S. Kanksa, Village Bamunara, Dist. Paschim Bardhaman, West Bengal – 713212",
+      "type": "Factory"
+    },
+    "phone": "+91-XXXXXXXXXX",
+    "email": "info@dippl.in",
+    "website": "https://durgapurinfra.co.in"
+  },
+  "quickFacts": [
+    {
+      "label": "Founded",
+      "value": "2016"
+    },
+    {
+      "label": "Industry",
+      "value": "Foundry & Ductile Iron Casting"
+    },
+    {
+      "label": "Capacity",
+      "value": "7,200 MTPA"
+    },
+    {
+      "label": "Specialties",
+      "value": "Manhole Covers, Automobile Parts, DI Castings"
+    },
+    {
+      "label": "Location",
+      "value": "Durgapur, West Bengal"
+    }
+  ]
+}
+
