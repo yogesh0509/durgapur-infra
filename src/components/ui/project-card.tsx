@@ -15,7 +15,7 @@ interface Project {
   area?: string
   images: string[]
   featured: boolean
-  category: "municipal" | "metallurgical" | "railway"; 
+  category: string; 
   tags: string[]
 }
 

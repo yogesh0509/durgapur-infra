@@ -32,7 +32,7 @@ export default function ProcessPage() {
         </AnimatedText>
 
         {/* Process Steps */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center mb-16 sm:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center sm:mb-24">
           {processSteps.map((step, index) => (
             <motion.div
               key={step.id}

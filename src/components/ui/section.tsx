@@ -19,7 +19,7 @@ export function Section({
   id 
 }: SectionProps) {
   return (
-    <section id={id} className={cn("py-10 sm:py-14 lg:py-16", className)}>
+    <section id={id} className={cn("py-6 sm:py-4 lg:py-8", className)}>
       <div className="container">
         {(title || subtitle) && (
           <div className={cn(

@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { Instagram, Facebook, Linkedin, Mail, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { usePathname } from "next/navigation"
+import { cn } from '@/lib/utils'
 
 interface LayoutProps {
   children: ReactNode
@@ -14,6 +16,9 @@ interface LayoutProps {
 }
 
 export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
+  const pathname = usePathname()
+  const isHome = pathname === "/"
+
   return (
     <>
       <Header className={headerClassName} isOverHero={isOverHero} />
@@ -24,6 +29,10 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
+          className={cn(
+            "transition-all duration-300",
+            !isHome && "mt-12" // adds space under the fixed header
+          )}
         >
           {children}
         </motion.div>
@@ -34,7 +43,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand */}
             <div>
-              <h3 className="font-display text-xl mb-4">DIPPL</h3>
+              <h3 className="font-display text-xl mb-4">DIPL</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Durgapur Infra Projects Pvt. Ltd.
               </p>
@@ -91,7 +100,6 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
               <ul className="space-y-2">
                 {[
                   'Municipal Castings',
-                  'Ingot Moulds',
                   'Railway Castings',
                   'Automobile Parts',
                   'Custom Castings',
@@ -120,11 +128,11 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                 </li>
                 <li>
                   <Link 
-                    href="tel:+91-XXXXXXXXXX"
+                    href="tel:+91-9609969999"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center"
                   >
                     <Phone className="h-4 w-4 mr-2" />
-                    +91-XXXXXXXXXX
+                    +91-9609969999
                   </Link>
                 </li>
                 <li className="text-xs text-muted-foreground">

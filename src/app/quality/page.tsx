@@ -80,7 +80,7 @@ export default function QualityPage() {
               Quality First Approach
             </h2>
             <p className="text-base text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Quality is not just a department at DIPPL—it's a fundamental principle that guides 
+              Quality is not just a department at DIPL—it's a fundamental principle that guides 
               every decision and action throughout our organization.
             </p>
             <Button asChild>

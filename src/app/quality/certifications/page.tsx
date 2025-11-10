@@ -54,7 +54,7 @@ export default function CertificationsPage() {
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <Award className="w-10 h-10 text-primary" />
@@ -69,7 +69,7 @@ export default function CertificationsPage() {
         </div>
 
         {/* Certifications Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -83,7 +83,7 @@ export default function CertificationsPage() {
         </div>
 
         {/* Certifications */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Our Certifications
@@ -111,7 +111,7 @@ export default function CertificationsPage() {
         </Section>
 
         {/* Certification Benefits */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Benefits of Our Certifications
@@ -133,7 +133,7 @@ export default function CertificationsPage() {
         </Section>
 
         {/* Certification Timeline */}
-        <Section className="mb-16">
+        <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
@@ -168,7 +168,7 @@ export default function CertificationsPage() {
         </Section>
 
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -190,7 +190,7 @@ export default function CertificationsPage() {
         </Section>
 
         {/* Quality Standards */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Quality Standards & Compliance

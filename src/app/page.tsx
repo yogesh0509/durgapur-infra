@@ -25,13 +25,6 @@ export default function Home() {
 
   const featuredProjects = projects.filter(project => project.featured).slice(0, 3)
 
-  const brandValueIcons: Record<string, React.ReactElement> = {
-    Target: <Target className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
-    Cog: <Cog className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
-    Award: <Award className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
-    Users: <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
-  }
-
   const processIcons: Record<string, React.ReactElement> = {
     MessageCircle: <MessageCircle className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
     PenTool: <PenTool className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
@@ -143,7 +136,7 @@ export default function Home() {
       <Section className="bg-secondary/5 text-center">
         <AnimatedText>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light mb-4 sm:mb-6">
-            Partner with DIPPL for Quality Casting Solutions
+            Partner with DIPL for Quality Casting Solutions
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-xl sm:max-w-2xl mx-auto">
           From municipal and sanitary infrastructure to railway components, we specialize in precision-engineered ductile iron castings built to the highest industry standards. Get in touch to discuss your project requirements.          </p>

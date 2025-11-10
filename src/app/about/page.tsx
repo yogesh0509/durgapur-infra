@@ -42,7 +42,7 @@ export default function AboutPage() {
           >
             <Image
               src="/images/dippl/manufacturing/foundry-facility.jpg"
-              alt="DIPPL Manufacturing Facility"
+              alt="DIPL Manufacturing Facility"
               fill
               className="object-cover"
             />
@@ -100,7 +100,7 @@ export default function AboutPage() {
         <AnimatedText>
           <h2 className="font-display text-2xl sm:text-4xl mb-4 sm:mb-6">Our Mission</h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8">
-            At DIPPL, we are committed to delivering precision-engineered ductile iron castings that meet the highest industry standards. Through continuous innovation, quality excellence, and customer partnership, we aim to be the preferred supplier for municipal, railway, and metallurgical casting solutions. Our mission is to contribute to India's infrastructure development with reliable, durable, and high-performance casting products.
+            At DIPL, we are committed to delivering precision-engineered ductile iron castings that meet the highest industry standards. Through continuous innovation, quality excellence, and customer partnership, we aim to be the preferred supplier for municipal, railway, and metallurgical casting solutions. Our mission is to contribute to India's infrastructure development with reliable, durable, and high-performance casting products.
           </p>
           <Button asChild size="lg">
             <Link href="/contact">

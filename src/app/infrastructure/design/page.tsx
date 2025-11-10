@@ -12,76 +12,54 @@ import Image from "next/image"
 export default function DesignInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.design
 
-  const designTools = [
+  const designCapabilities = [
     {
-      title: "CAD Design Systems",
-      description: "Advanced computer-aided design software for precise modeling",
+      title: "In-house Product Design Facility",
+      description: "To enhance customer service, we have established a strong product design facility. Using advanced software like AutoCAD, Creo Mechanica, and SolidWorks, we streamline design and development, reducing lead times. This ensures precise, detailed designs tailored to each project's specific requirements.",
       icon: <PenTool className="w-8 h-8 text-primary" />
     },
     {
-      title: "Simulation Capabilities",
-      description: "Finite element analysis and casting simulation software",
-      icon: <Cpu className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "3D Modeling",
-      description: "Comprehensive 3D modeling for visualization and prototyping",
+      title: "Expert Product Development Team",
+      description: "Our skilled product development team handles complex engineering and planning tasks, collaborating closely with clients to provide cost-effective, customized solutions. From concept to production, we guarantee products meet international standards and exceed client expectations.",
       icon: <Layers className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "Design Review",
-      description: "Collaborative design review and approval processes",
-      icon: <Monitor className="w-8 h-8 text-primary" />
     }
   ]
 
-  const designProcess = [
-    {
-      step: "Requirements Analysis",
-      description: "Understanding customer specifications and application requirements"
-    },
-    {
-      step: "Conceptual Design",
-      description: "Initial design concepts and feasibility studies"
-    },
-    {
-      step: "CAD Modeling",
-      description: "Detailed 3D modeling and technical drawings"
-    },
-    {
-      step: "Simulation & Analysis",
-      description: "Finite element analysis and casting simulation"
-    },
-    {
-      step: "Design Optimization",
-      description: "Iterative improvement based on simulation results"
-    },
-    {
-      step: "Final Design Approval",
-      description: "Customer approval and final design documentation"
-    }
+  const certifications = [
+    "ISO 9001:2015 certification for quality management",
+    "BSI Kitemark EN124-2:2015 for international standards compliance",
+    "ISO 45001:2018 for occupational health and safety",
+    "ISO 14001:2015 for environmental management",
+    "Accredited by TÜV SÜD"
+  ]
+
+  const designSoftware = [
+    "AutoCAD",
+    "Creo Mechanica",
+    "SolidWorks"
   ]
 
   return (
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <PenTool className="w-10 h-10 text-primary" />
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light mb-6">
-              {infrastructure.title}
+              Design & Development
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              {infrastructure.description}
+              Our comprehensive design and development infrastructure enables us to create innovative casting solutions 
+              tailored to your specific requirements. Partner with us for cutting-edge design excellence.
             </p>
           </AnimatedText>
         </div>
 
         {/* Design Studio Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -94,25 +72,25 @@ export default function DesignInfrastructurePage() {
           </AnimatedText>
         </div>
 
-        {/* Design Tools */}
-        <Section className="mb-16">
+        {/* Design Facilities */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Design Tools & Technologies
+              Design Facilities & Expertise
             </h2>
           </AnimatedText>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {designTools.map((tool, index) => (
-              <AnimatedText key={tool.title} delay={index * 0.1}>
+          <div className="grid grid-cols-1 gap-8">
+            {designCapabilities.map((capability, index) => (
+              <AnimatedText key={capability.title} delay={index * 0.1}>
                 <div className="bg-background rounded-xl p-8 shadow-sm border border-border/20">
                   <div className="flex items-start space-x-4">
                     <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl flex-shrink-0">
-                      {tool.icon}
+                      {capability.icon}
                     </div>
                     <div>
-                      <h3 className="font-display text-xl mb-3">{tool.title}</h3>
-                      <p className="text-muted-foreground">{tool.description}</p>
+                      <h3 className="font-display text-xl mb-3">{capability.title}</h3>
+                      <p className="text-muted-foreground">{capability.description}</p>
                     </div>
                   </div>
                 </div>
@@ -121,68 +99,30 @@ export default function DesignInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Design Process */}
-        <Section className="mb-16">
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Design & Development Process
-            </h2>
-          </AnimatedText>
-          
-          <div className="space-y-6">
-            {designProcess.map((step, index) => (
-              <AnimatedText key={step.step} delay={index * 0.1}>
-                <div className="flex items-start space-x-6">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary text-primary-foreground rounded-full font-bold text-lg flex-shrink-0">
-                    {index + 1}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-display text-xl mb-2">{step.step}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
-                  </div>
-                </div>
-              </AnimatedText>
-            ))}
-          </div>
-        </Section>
-
-        {/* Capabilities */}
-        <Section className="mb-16">
+        {/* Design Software */}
+        <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
-                Design Capabilities
+                Advanced Design Software
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <PenTool className="w-8 h-8 text-primary" />
+                {designSoftware.map((software, index) => (
+                  <div key={software} className="text-center">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Monitor className="w-8 h-8 text-primary" />
+                    </div>
+                    <h3 className="font-display text-xl mb-2">{software}</h3>
                   </div>
-                  <h3 className="font-display text-xl mb-2">Custom Design</h3>
-                  <p className="text-muted-foreground">Tailored solutions for specific applications</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Cpu className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Simulation</h3>
-                  <p className="text-muted-foreground">Advanced casting simulation and analysis</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Layers className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Prototyping</h3>
-                  <p className="text-muted-foreground">Rapid prototyping and testing capabilities</p>
-                </div>
+                ))}
               </div>
             </AnimatedText>
           </div>
         </Section>
 
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -203,28 +143,22 @@ export default function DesignInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Design Services */}
-        <Section className="mb-16">
+        {/* Certifications */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Design Services
+              Certifications
             </h2>
           </AnimatedText>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              "Concept Development",
-              "3D CAD Modeling",
-              "Simulation & Analysis",
-              "Design Optimization",
-              "Technical Documentation",
-              "Design Validation",
-              "Prototype Development",
-              "Design Consultation"
-            ].map((service, index) => (
-              <AnimatedText key={service} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20 text-center">
-                  <h3 className="font-display text-lg">{service}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {certifications.map((cert, index) => (
+              <AnimatedText key={cert} delay={index * 0.1}>
+                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                    <span className="text-muted-foreground">{cert}</span>
+                  </div>
                 </div>
               </AnimatedText>
             ))}
@@ -235,11 +169,11 @@ export default function DesignInfrastructurePage() {
         <Section className="text-center">
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-6">
-              Innovative Design Solutions
+              Partner with Our Design Excellence
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Our design and development infrastructure enables us to create innovative casting solutions 
-              tailored to your specific requirements. Partner with us for cutting-edge design excellence.
+              Our comprehensive design and development capabilities ensure we can deliver innovative casting solutions 
+              that meet your exact specifications. Contact us to discuss your project requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">

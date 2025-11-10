@@ -12,9 +12,9 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Our Story', href: '/about' },
   { name: 'Products', href: '/products', submenu: [
-    { name: 'Municipal Casting of Gray and Ductile Iron', href: '/products/municipal' },
-    { name: 'Cast Iron Ingot Moulds and Centre Columns', href: '/products/ingot-moulds' },
-    { name: 'Locomotive / Railway Castings', href: '/products/railway' }
+    { name: 'Railway Castings', href: '/products/railway' },
+    { name: 'Bollards', href: '/products/bollards' },
+    { name: 'Hardscape', href: '/products/hardscape' }
   ]},
   { name: 'Infrastructure', href: '/infrastructure', submenu: [
     { name: 'Manufacturing Infrastructure', href: '/infrastructure/manufacturing' },
@@ -63,7 +63,7 @@ export function Header({ className = '', isOverHero = false }: { className?: str
             />
             <div className="hidden sm:block">
               <span className="font-display text-xl font-light tracking-wide">
-                DIPPL
+                DIPL
               </span>
               <div className="text-xs text-muted-foreground hidden lg:block">
                 Durgapur Infra Projects Pvt. Ltd.

@@ -1,0 +1,200 @@
+{
+  "bollards": {
+    "id": "bollards",
+    "title": "Bollards",
+    "description": "Create inviting and safe environments with our diverse range of bollards. Designed to serve as both visual and physical barriers, our bollards also add architectural flair and additional features – such as functional lighting – to landscapes.",
+    "image": "/images/dippl/bollards/bollards-2.jpg",
+    "sections": {
+      "ductile iron": {
+        "title": "Ductile Iron Bollards",
+        "description": "Bollards made from ductile iron, a material that is strong and durable, and can be cast into a variety of shapes and sizes. Ductile iron is a type of cast iron that is made from iron and carbon, and is known for its strength and durability.",
+        "image": "/images/dippl/bollards/bollards-2.jpg",
+        "products": [
+          {
+            "name": "Bollard / Cover Fluted",
+            "model": "R-7551",
+            "material": "Ductile Iron",
+            "height": "35-3/4\"",
+            "max_interior_pipe_diameter": "4-1/2\"",
+            "description": "Decorative fluted bollard, line of three installed in front of building.",
+            "price": "640",
+            "currency": "USD",
+            "image": "/images/dippl/bollards/bollards-1.webp"
+          },
+          {
+            "name": "Bollard / Cover Non-Fluted",
+            "model": "R-7589",
+            "material": "Ductile Iron",
+            "height": "35-3/4\"",
+            "max_interior_pipe_diameter": "4-1/2\"",
+            "description": "Non-fluted, long row guarding a building.",
+            "price": "795",
+            "currency": "USD",
+            "image": "/images/dippl/bollards/bollards-2.jpg"
+          },
+          {
+            "name": "Bollard / Cover Fluted",
+            "model": "R-7555",
+            "material": "Ductile Iron",
+            "height": "35\"",
+            "max_interior_pipe_diameter": "4-1/2\"",
+            "description": "Decorative, two on a path.",
+            "price": "653",
+            "currency": "USD",
+            "image": "/images/dippl/bollards/bollards-3.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "hardscape": {
+    "id": "hardscape",
+    "title": "Hardscape",
+    "description": "Explore high-quality hardscape products designed to excel in urban and industrial environments. Crafted from durable cast iron, these products are built to withstand harsh conditions with minimal maintenance.",
+    "image": "/images/dippl/hardscape/main.jpg",
+    "sections": {
+      "detectableWarningPlates": {
+        "title": "Detectable Warning Plates",
+        "description": "Reliance Foundry's detectable warning plates enhance pedestrian safety by providing tactile surface indicators that guide visually impaired individuals. These plates mark transitions between sidewalks and streets, improving accessibility for all. Made from raw cast iron, they develop a rich red-brown patina that offers excellent visual contrast while ensuring long-term durability.",
+        "image": "/images/dippl/hardscape/dwp.jpg",
+        "products": [
+          {
+            "id": "r-4985-30",
+            "code": "R-4985-30",
+            "name": "R-4985-30",
+            "image": "/images/dippl/hardscape/dwp/r-4985-30.jpg",
+            "color": "Raw Cast Iron (Red-Brown Patina)",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "30\" x 30\"",
+            "weight": "Custom",
+            "applications": ["Sidewalk transitions", "Street crossings", "Pedestrian safety zones"]
+          },
+          {
+            "id": "r-4985-24",
+            "code": "R-4985-24",
+            "name": "R-4985-24",
+            "image": "/images/dippl/hardscape/dwp/r-4985-24.jpg",
+            "color": "Raw Cast Iron (Red-Brown Patina)",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "24\" x 24\"",
+            "weight": "Custom",
+            "applications": ["Sidewalk transitions", "Street crossings", "Pedestrian safety zones"]
+          }
+        ]
+      },
+      "treeGrates": {
+        "title": "Tree Grates",
+        "description": "Reliance Foundry's tree grates protect trees and their root systems from urban wear and tear while enhancing the aesthetic appeal of streetscapes. The grates allow air, water, and light to reach tree roots, supporting healthy growth. Designed to meet ADA standards, these cast iron grates provide a smooth, safe walking surface that eliminates tripping hazards for pedestrians.",
+        "image": "/images/dippl/hardscape/tree-grates.jpg",
+        "products": [
+          {
+            "id": "r-8870-cosmopolitan",
+            "code": "R-8870 Cosmopolitan",
+            "name": "R-8870 Cosmopolitan",
+            "image": "/images/dippl/hardscape/tree-grates/r-8870.jpg",
+            "color": "Raw Cast Iron",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "Custom",
+            "weight": "Custom",
+            "applications": ["Urban streetscapes", "Tree protection", "Pedestrian walkways"]
+          },
+          {
+            "id": "r-8871-solana",
+            "code": "R-8871 Solana",
+            "name": "R-8871 Solana",
+            "image": "/images/dippl/hardscape/tree-grates/r-8871.jpg",
+            "color": "Raw Cast Iron",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "Custom",
+            "weight": "Custom",
+            "applications": ["Urban streetscapes", "Tree protection", "Pedestrian walkways"]
+          }
+        ]
+      },
+      "trenchGrates": {
+        "title": "Trench Grates",
+        "description": "Reliance Foundry's trench grates deliver effective water management for a variety of settings, from pedestrian walkways to industrial facilities. These cast iron grates prevent flooding in areas such as parking lots, driveways, and warehouses by rapidly draining excess water. With their raw finish, they form a protective patina that resists corrosion while blending seamlessly with architectural designs.",
+        "image": "/images/dippl/hardscape/trench-grates.jpg",
+        "products": [
+          {
+            "id": "r-4989-carriage-walk",
+            "code": "R-4989 Carriage Walk",
+            "name": "R-4989 Carriage Walk",
+            "image": "/images/dippl/hardscape/trench-grates/r-4989-carriage.jpg",
+            "color": "Raw Cast Iron (Patina)",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "6\" width",
+            "pattern": "Line patterns",
+            "weight": "Custom",
+            "applications": ["Parking lots", "Driveways", "Pedestrian walkways", "Industrial facilities"]
+          },
+          {
+            "id": "r-4989-greek-key",
+            "code": "R-4989 Greek Key",
+            "name": "R-4989 Greek Key",
+            "image": "/images/dippl/hardscape/trench-grates/r-4989-greek.jpg",
+            "color": "Raw Cast Iron (Patina)",
+            "material": "Cast Iron",
+            "finish": "Raw",
+            "dimensions": "6\" width",
+            "pattern": "Greek key motif",
+            "weight": "Custom",
+            "applications": ["Parking lots", "Driveways", "Pedestrian walkways", "Industrial facilities"]
+          }
+        ]
+      }
+    }
+  },
+  "railway": {
+    "id": "railway-casting",
+    "title": "Locomotive / Railway Castings",
+    "description": "Indian Railways, one of the world's largest rail networks, transports over 8 billion passengers and more than 1 billion tons of freight annually. Since 2022, Allied Iron Products has proudly partnered with Indian Railways as a trusted supplier. As a leading manufacturer of railway castings in India, we produce a variety of components, including cast iron brake blocks and counter weights. We offer a diverse range of high-quality, durable railway castings at competitive prices.",
+    "image": "/images/dippl/railway/brake-block.jpg",
+    "products": [
+      {
+        "id": "brake-block",
+        "code": "Brake Block",
+        "name": "Cast Iron Brake Block",
+        "image": "/images/dippl/railway/brake-block.jpg",
+        "color": "Raw Cast Iron / Black Painted",
+        "material": "Cast Iron",
+        "finish": "Raw or Painted",
+        "dimensions": "Railway Standard",
+        "weight": "Custom as per specification",
+        "applications": ["Locomotive braking systems", "Railway safety equipment", "Freight car applications"],
+        "specifications": {
+          "materialGrade": "Cast Iron Grade as per Railway Standards",
+          "hardness": "180-250 HB",
+          "impactResistance": "High",
+          "wearResistance": "Excellent",
+          "certification": "Railway Approved"
+        }
+      },
+      {
+        "id": "counter-weight",
+        "code": "Counter Weight",
+        "name": "Railway Counter Weight",
+        "image": "/images/dippl/railway/counter-weight.webp",
+        "color": "Raw Cast Iron / Black Painted",
+        "material": "Cast Iron",
+        "finish": "Raw or Painted",
+        "dimensions": "Custom as per requirement",
+        "weight": "Custom as per specification",
+        "applications": ["Locomotive balance systems", "Railway counterbalance", "Weight distribution"],
+        "specifications": {
+          "materialGrade": "Cast Iron Grade as per Railway Standards",
+          "density": "Standard Cast Iron",
+          "precision": "High",
+          "balance": "Accurate weight distribution",
+          "certification": "Railway Approved"
+        }
+      }
+    ]
+  }
+}
+

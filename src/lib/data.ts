@@ -8,7 +8,7 @@ export interface Project {
   area?: string
   images: string[]
   featured: boolean
-  category: 'municipal' | 'metallurgical' | 'railway'
+  category: string
   tags: string[]
 }
 
@@ -149,25 +149,7 @@ export interface ManufacturingData {
 
 export const projects: Project[] = [
   {
-    id: 'municipal-casting',
-    title: 'Municipal Casting Project',
-    location: 'Durgapur',
-    type: 'Municipal Infrastructure',
-    description: 'High-strength, corrosion-resistant municipal castings built to IS standards. Precision manufacturing ensures durability and reliability for urban infrastructure.',
-    year: '2024',
-    area: '7,200 MTPA',
-    images: [
-      '/images/dippl/municipal/manhole-covers.jpg',
-      '/images/dippl/municipal/drainage-grates.jpg',
-      '/images/dippl/municipal/utility-access.jpg',
-      '/images/dippl/municipal/street-furniture.jpg'
-    ],
-    featured: true,
-    category: 'municipal',
-    tags: ['municipal', 'infrastructure', 'corrosion-resistant', 'IS standards']
-  },
-  {
-    id: 'railway-casting',
+    id: 'railway',
     title: 'Railway Infrastructure Castings',
     location: 'Durgapur',
     type: 'Railway Components',
@@ -175,62 +157,32 @@ export const projects: Project[] = [
     year: '2024',
     area: 'Custom Orders',
     images: [
-      '/images/dippl/railway/3.png',
-      '/images/dippl/railway/track-components.jpg',
-      '/images/dippl/railway/signal-equipment.jpg',
-      '/images/dippl/railway/railway-castings.jpg'
+      '/images/dippl/railway/brake-block.jpg',
     ],
     featured: true,
     category: 'railway',
     tags: ['railway', 'locomotive', 'safety-compliant', 'custom casting']
   },
   {
-    id: 'ingot-moulds',
-    title: 'Metallurgical Ingot Moulds',
+    id: 'hardscape',
+    title: 'Urban Hardscape Projects',
     location: 'Durgapur',
-    type: 'Metallurgical Equipment',
-    description: 'Precision-molded ingot moulds for metallurgical industries. Engineered for consistent performance and extended service life.',
+    type: 'Hardscape',
+    description: 'High-quality hardscape products for urban and industrial areas.',
     year: '2024',
-    area: 'Custom Specifications',
+    area: 'Multiple Sites',
     images: [
-      '/images/dippl/metallurgical/2.png',
-      '/images/dippl/metallurgical/centre-columns.jpg',
-      '/images/dippl/metallurgical/mould-casting.jpg',
-      '/images/dippl/metallurgical/precision-moulds.jpg'
+      '/images/dippl/hardscape/tree-grates.jpg'
     ],
     featured: true,
-    category: 'metallurgical',
-    tags: ['metallurgical', 'ingot-moulds', 'precision', 'extended-life']
+    category: 'urban',
+    tags: ['hardscape', 'urban', 'infrastructure']
   }
 ];
 
 export const services: Service[] = [
   {
-    id: 'municipal-casting',
-    title: 'Municipal Casting of Gray and Ductile Iron',
-    description: 'High-strength, corrosion-resistant municipal castings built to IS standards for urban infrastructure development.',
-    icon: 'Building2',
-    features: [
-      'Manhole covers and frames',
-      'Drainage grates',
-      'Utility access covers',
-      'Street furniture components'
-    ]
-  },
-  {
-    id: 'ingot-moulds',
-    title: 'Cast Iron Ingot Moulds and Centre Columns',
-    description: 'Precision-molded ingot moulds for metallurgical industries with extended service life and consistent performance.',
-    icon: 'Cog',
-    features: [
-      'Custom ingot moulds',
-      'Centre column casting',
-      'Metallurgical grade quality',
-      'Precision engineering'
-    ]
-  },
-  {
-    id: 'railway-casting',
+    id: 'railway',
     title: 'Locomotive / Railway Castings',
     description: 'Custom iron castings for locomotive and rail infrastructure meeting stringent railway specifications and safety standards.',
     icon: 'Train',
@@ -239,6 +191,28 @@ export const services: Service[] = [
       'Track infrastructure parts',
       'Signal equipment castings',
       'Railway safety components'
+    ]
+  },
+  {
+    id: 'hardscape',
+    title: 'Hardscape Castings',
+    description: 'Durable cast iron solutions for urban and industrial hardscape needs.',
+    icon: 'Grid',
+    features: [
+      'Detectable warning plates',
+      'Tree grates',
+      'Trench grates for water management'
+    ]
+  },
+  {
+    id: 'bollards',
+    title: 'Architectural Bollards',
+    description: 'Stylish and functional bollards for safe environments.',
+    icon: 'Circle',
+    features: [
+      'Visual & physical barriers',
+      'Durable construction',
+      'Architectural design options'
     ]
   }
 ];
@@ -265,7 +239,7 @@ export const processSteps = [
   {
     id: 'casting-production',
     title: 'Casting Production',
-    description: 'High-quality ductile iron casting using state-of-the-art induction furnaces.',
+    description: 'Ductile iron is casted into the mould using a semi-automatic pouring system.',
     icon: 'Hammer'
   },
   {

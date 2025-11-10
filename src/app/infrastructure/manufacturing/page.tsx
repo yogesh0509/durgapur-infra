@@ -12,53 +12,55 @@ import Image from "next/image"
 export default function ManufacturingInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.manufacturing
 
-  const equipment = [
+  const meltingEquipment = [
     {
-      title: "Automated Molding Lines",
-      description: "Semi-automatic green sand molding systems for precision and efficiency",
+      title: "Induction Furnaces",
+      description: "1 MT Inductotherm iron melting furnace with two crucibles and 2 MT Inductotherm iron melting furnace with two crucibles. Two cupola furnaces with 5 MT/hr casting capacity. Ladle preheater included.",
       icon: <Factory className="w-8 h-8 text-primary" />
     },
     {
-      title: "Induction Furnaces",
-      description: "High-capacity furnaces for efficient melting of pig iron and scrap",
-      icon: <Zap className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "Shot Blasting Units",
-      description: "Advanced surface preparation and cleaning equipment",
+      title: "Sand Plant for Machine Moulding",
+      description: "30 TPH capacity RHINO make sand plant using Compact Sand Technology from FONDARC. Simple sand system with three belt conveyors, no pit, no bucket elevator. RTC Series Online Sand Control for 100% batch control with data logging.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
-      title: "Fettling Operations",
-      description: "Precision fettling and grinding systems for final finishing",
+      title: "Moulding Facilities",
+      description: "RHINO make FM3 High-Pressure Multi-Piston Moulding Machine Line with 25 boxes/hr speed. 64 pallet cars with 1200mm x 1300mm mould boxes. Automatic mould handling and punch-out system with separate hand moulding line.",
       icon: <Settings className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Pattern & Core Shop",
+      description: "CO2 process, systematic pattern storage racks, in-house pattern repairing and maintenance. Equipped with radial drilling machine (50mm capacity), surface plate, measuring tools, gauges, and lathe machine with 8-foot bed.",
+      icon: <Settings className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Fettling and Paint",
+      description: "2 automatic shot blast machines (hanger type), various grinding and cutting machines. Wenger-make spray paint machine for epoxy coating and bitumen paint coating.",
+      icon: <Cog className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Material Handling",
+      description: "1 x 7.0-tonne EOT crane, 4 x 5.0-tonne EOT cranes, 1 x 2.0-tonne magnet crane, 2 x 2.0-tonne forklifts, 10 x 1-tonne to 3-tonne EOT crane hoists. 18 weighing scales up to 2-tonne capacity. Semi-automatic liquid hot metal pouring system with metal weight measuring.",
+      icon: <Zap className="w-8 h-8 text-primary" />
     }
   ]
 
-  const processSteps = [
+  const certifications = [
+    "ISO 9001:2015 certification for quality management",
+    "BSI Kitemark EN124-2:2015 for international standards compliance",
+    "ISO 45001:2018 for occupational health and safety",
+    "ISO 14001:2015 for environmental management",
+    "Accredited by TÜV SÜD"
+  ]
+
+  const specialFacilities = [
     {
-      step: "Raw Material Preparation",
-      description: "Pig iron, steel scrap, and foundry returns are prepared and weighed"
+      title: "Despatch Facilities",
+      description: "In-house container stuffing facility with 2 loading ramps and 1 in-house weighbridge for efficient logistics and shipping operations."
     },
     {
-      step: "Melting Process",
-      description: "Materials are melted in induction furnaces at controlled temperatures"
-    },
-    {
-      step: "Treatment & Inoculation",
-      description: "Magnesium treatment and ferro silicon inoculation for ductile iron properties"
-    },
-    {
-      step: "Molding & Pouring",
-      description: "Green sand molds are prepared and molten metal is poured"
-    },
-    {
-      step: "Cooling & Knockout",
-      description: "Controlled cooling followed by removal of castings from molds"
-    },
-    {
-      step: "Finishing Operations",
-      description: "Fettling, grinding, shot blasting, and surface treatment"
+      title: "Quality Assurance",
+      description: "All facilities certified to international standards ensuring consistent quality across all operations from raw materials to final dispatch."
     }
   ]
 
@@ -66,7 +68,7 @@ export default function ManufacturingInfrastructurePage() {
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <Factory className="w-10 h-10 text-primary" />
@@ -75,13 +77,16 @@ export default function ManufacturingInfrastructurePage() {
               {infrastructure.title}
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              {infrastructure.description}
+              We manufacture products in accordance with relevant international market standards. 
+              Our manufacturing processes are the backbone of our operations and give us immense confidence, from melting 
+              iron to delivery of castings. We guarantee consistent product reliability and durability, meeting the highest 
+              industry standards.
             </p>
           </AnimatedText>
         </div>
 
         {/* Facility Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -94,16 +99,16 @@ export default function ManufacturingInfrastructurePage() {
           </AnimatedText>
         </div>
 
-        {/* Equipment & Systems */}
-        <Section className="mb-16">
+        {/* Manufacturing Equipment */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Equipment & Systems
+              Manufacturing Equipment & Facilities
             </h2>
           </AnimatedText>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {equipment.map((item, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {meltingEquipment.map((item, index) => (
               <AnimatedText key={item.title} delay={index * 0.1}>
                 <div className="bg-background rounded-xl p-8 shadow-sm border border-border/20">
                   <div className="flex items-start space-x-4">
@@ -121,25 +126,20 @@ export default function ManufacturingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Manufacturing Process */}
-        <Section className="mb-16">
+        {/* Special Facilities */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Manufacturing Process
+              Special Facilities
             </h2>
           </AnimatedText>
           
-          <div className="space-y-6">
-            {processSteps.map((step, index) => (
-              <AnimatedText key={step.step} delay={index * 0.1}>
-                <div className="flex items-start space-x-6">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary text-primary-foreground rounded-full font-bold text-lg flex-shrink-0">
-                    {index + 1}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-display text-xl mb-2">{step.step}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {specialFacilities.map((facility, index) => (
+              <AnimatedText key={facility.title} delay={index * 0.1}>
+                <div className="bg-secondary/5 rounded-xl p-8">
+                  <h3 className="font-display text-xl mb-3">{facility.title}</h3>
+                  <p className="text-muted-foreground">{facility.description}</p>
                 </div>
               </AnimatedText>
             ))}
@@ -147,7 +147,7 @@ export default function ManufacturingInfrastructurePage() {
         </Section>
 
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -169,7 +169,7 @@ export default function ManufacturingInfrastructurePage() {
         </Section>
 
         {/* Capacity & Expansion */}
-        <Section className="mb-16">
+        <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
@@ -194,8 +194,30 @@ export default function ManufacturingInfrastructurePage() {
           </div>
         </Section>
 
+        {/* Certifications */}
+        <Section>
+          <AnimatedText>
+            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
+              Certifications & Standards
+            </h2>
+          </AnimatedText>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {certifications.map((cert, index) => (
+              <AnimatedText key={cert} delay={index * 0.1}>
+                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                    <span className="text-muted-foreground">{cert}</span>
+                  </div>
+                </div>
+              </AnimatedText>
+            ))}
+          </div>
+        </Section>
+
         {/* Utilities */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Utilities & Support Systems

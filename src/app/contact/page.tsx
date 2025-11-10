@@ -191,14 +191,6 @@ export default function ContactPage() {
                 <p><strong>Type:</strong> {manufacturingData.companyInfo.type}</p>
               </div>
             </div>
-            <div className="bg-secondary/5 rounded-xl p-6">
-              <h2 className="font-display text-lg sm:text-xl mb-2 sm:mb-4">Office Hours</h2>
-              <div className="space-y-2 text-muted-foreground text-sm sm:text-base">
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </Section>

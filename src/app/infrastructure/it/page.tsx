@@ -14,43 +14,55 @@ export default function ITInfrastructurePage() {
 
   const itSystems = [
     {
-      title: "ERP Integration",
-      description: "Enterprise resource planning system for seamless operations management",
-      icon: <Database className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "Process Monitoring",
-      description: "Real-time monitoring of manufacturing processes and equipment",
-      icon: <Monitor className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "Quality Tracking",
-      description: "Digital quality management system for comprehensive tracking",
+      title: "Order Tracking System",
+      description: "Transparent order tracking lets customers monitor shipments in real-time, building trust, managing expectations, and ensuring timely deliveries with up-to-date status information.",
       icon: <BarChart3 className="w-8 h-8 text-primary" />
     },
     {
-      title: "Data Analytics",
-      description: "Advanced analytics for process optimization and quality improvement",
+      title: "Production Management System (PMS)",
+      description: "Optimizes production, scheduling, and resource allocation. Real-time monitoring identifies bottlenecks, ensures quality control, and provides data-driven insights for continuous improvement and decision-making.",
+      icon: <Monitor className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Inventory Management System (IMS)",
+      description: "Real-time stock level tracking for raw materials and finished products. Prevents overstocking or stockouts, enhances order accuracy, supporting timely deliveries and better cash flow management.",
+      icon: <Database className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "CRM System",
+      description: "Dedicated CRM system ensures efficient client communication, offering timely updates and support. Simplifies issue resolution, allowing clients to easily track orders and access real-time information, strengthening customer satisfaction and long-term relationships.",
+      icon: <BarChart3 className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Secure Network",
+      description: "Secure network protects data from unauthorized access, ensuring confidentiality across production, logistics, and client communications, maintaining operational integrity.",
+      icon: <Cpu className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Cloud-Based Data Management",
+      description: "Cloud-based services for centralized, real-time data access, enhancing collaboration and operational efficiency across departments, regardless of location.",
+      icon: <Database className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Data Backup and Recovery",
+      description: "Robust backup and disaster recovery system protects critical business data, ensuring continuity and minimizing downtime. Safeguards against potential technical failures, preserving important information for uninterrupted operations.",
       icon: <Cpu className="w-8 h-8 text-primary" />
     }
   ]
 
-  const digitalCapabilities = [
-    "Real-time production monitoring",
-    "Automated quality data collection",
-    "Digital work order management",
-    "Inventory tracking and management",
-    "Performance analytics and reporting",
-    "Predictive maintenance scheduling",
-    "Customer portal for order tracking",
-    "Integration with supplier systems"
+  const certifications = [
+    "ISO 9001:2015 certification for quality management",
+    "BSI Kitemark EN124-2:2015 for international standards compliance",
+    "ISO 45001:2018 for occupational health and safety",
+    "ISO 14001:2015 for environmental management",
+    "Accredited by TÜV SÜD"
   ]
 
   return (
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <Cpu className="w-10 h-10 text-primary" />
@@ -59,13 +71,15 @@ export default function ITInfrastructurePage() {
               {infrastructure.title}
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              {infrastructure.description}
+              We've implemented advanced management systems to ensure seamless operations and 
+              compliance with international standards. These systems are key pillars of the company's infrastructure, 
+              allowing it to operate efficiently across various departments.
             </p>
           </AnimatedText>
         </div>
 
         {/* IT Infrastructure Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -79,10 +93,10 @@ export default function ITInfrastructurePage() {
         </div>
 
         {/* IT Systems */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              IT Systems & Technologies
+              Management Systems & Technologies
             </h2>
           </AnimatedText>
           
@@ -105,65 +119,8 @@ export default function ITInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Digital Capabilities */}
-        <Section className="mb-16">
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Digital Capabilities
-            </h2>
-          </AnimatedText>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {digitalCapabilities.map((capability, index) => (
-              <AnimatedText key={capability} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                    <span className="text-muted-foreground">{capability}</span>
-                  </div>
-                </div>
-              </AnimatedText>
-            ))}
-          </div>
-        </Section>
-
-        {/* Benefits */}
-        <Section className="mb-16">
-          <div className="bg-secondary/5 rounded-xl p-12">
-            <AnimatedText>
-              <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
-                Digital Transformation Benefits
-              </h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <BarChart3 className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Improved Efficiency</h3>
-                  <p className="text-muted-foreground">Streamlined processes and reduced manual errors</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Monitor className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Real-time Visibility</h3>
-                  <p className="text-muted-foreground">Complete visibility into production and quality metrics</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Database className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Data-Driven Decisions</h3>
-                  <p className="text-muted-foreground">Analytics-driven insights for continuous improvement</p>
-                </div>
-              </div>
-            </AnimatedText>
-          </div>
-        </Section>
-
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -184,31 +141,27 @@ export default function ITInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Technology Stack */}
-        <Section className="mb-16">
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Technology Stack
-            </h2>
-          </AnimatedText>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              "ERP Systems",
-              "IoT Sensors",
-              "Cloud Computing",
-              "Data Analytics",
-              "Mobile Applications",
-              "API Integration",
-              "Cybersecurity",
-              "Backup Systems"
-            ].map((tech, index) => (
-              <AnimatedText key={tech} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20 text-center">
-                  <h3 className="font-display text-lg">{tech}</h3>
-                </div>
-              </AnimatedText>
-            ))}
+        {/* Certifications */}
+        <Section>
+          <div className="bg-secondary/5 rounded-xl p-12">
+            <AnimatedText>
+              <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
+                Certifications
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {certifications.map((cert, index) => (
+                  <AnimatedText key={cert} delay={index * 0.1}>
+                    <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+                      <div className="flex items-center">
+                        <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                        <span className="text-muted-foreground">{cert}</span>
+                      </div>
+                    </div>
+                  </AnimatedText>
+                ))}
+              </div>
+            </AnimatedText>
           </div>
         </Section>
 
@@ -220,7 +173,7 @@ export default function ITInfrastructurePage() {
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Our advanced IT infrastructure ensures operational excellence and customer satisfaction. 
-              Experience the benefits of digital manufacturing with DIPPL.
+              Experience the benefits of digital manufacturing with DIPL.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">

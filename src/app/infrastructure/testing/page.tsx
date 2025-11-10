@@ -12,60 +12,105 @@ import Image from "next/image"
 export default function TestingInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.testing
 
-  const testingEquipment = [
+  const strengthEquipment = [
     {
-      title: "Spectrometer Analysis",
-      description: "Advanced chemical composition analysis for precise material verification",
-      icon: <TestTube className="w-8 h-8 text-primary" />
-    },
-    {
-      title: "Tensile Testing",
-      description: "Mechanical property testing to ensure strength and durability standards",
+      title: "Universal Testing Machine",
+      description: "40-tonne capacity computerized, digital universal testing machine for tensile, yield and elongation testing",
       icon: <Zap className="w-8 h-8 text-primary" />
     },
     {
-      title: "Hardness Analysis",
-      description: "Surface and bulk hardness measurement for quality assurance",
+      title: "Hardness Testing",
+      description: "Brinell hardness testing machine for material hardness verification and quality assurance",
       icon: <Award className="w-8 h-8 text-primary" />
     },
     {
-      title: "Microstructure Analysis",
-      description: "Metallographic examination for grain structure and quality assessment",
-      icon: <Microscope className="w-8 h-8 text-primary" />
+      title: "Load Testing Machine",
+      description: "100-tonne capacity load testing machine for comprehensive strength analysis",
+      icon: <CheckCircle className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Mould and Core Hardness Tester",
+      description: "Specialized equipment for testing mould and core hardness to ensure casting quality",
+      icon: <TestTube className="w-8 h-8 text-primary" />
     }
   ]
 
-  const qualityChecks = [
-    "Chemical composition verification",
-    "Mechanical property testing",
-    "Dimensional accuracy inspection",
-    "Surface finish assessment",
-    "Hardness measurement",
-    "Microstructure analysis",
-    "Non-destructive testing",
-    "Final quality certification"
+  const microscopyEquipment = [
+    {
+      title: "Metallurgical Microscope",
+      description: "Metallurgical microscope with image analyser for detailed microstructure examination",
+      icon: <Microscope className="w-8 h-8 text-primary" />
+    },
+    {
+      title: "Spectrometer Analysis",
+      description: "Spectrometer with necessary polishing machine for sampling and wet lab for chemical analysis",
+      icon: <TestTube className="w-8 h-8 text-primary" />
+    }
+  ]
+
+  const sandTestingEquipment = [
+    {
+      title: "Green Comprehensive Sand Testing Machine",
+      description: "Advanced equipment for comprehensive green sand testing and quality control"
+    },
+    {
+      title: "Digital Compatibility Sand Tester",
+      description: "Precision digital sand compatibility testing for optimal mould quality"
+    },
+    {
+      title: "Digital Sand Siever",
+      description: "Automated digital sand sieving for particle size analysis"
+    },
+    {
+      title: "Digital Sand Moisture Testing",
+      description: "Accurate moisture content measurement for sand preparation"
+    },
+    {
+      title: "Digital Permeability Tester",
+      description: "Sand permeability testing for gas venting and casting quality assurance"
+    }
+  ]
+
+  const specializedEquipment = [
+    "Pull-out and tilt test machine",
+    "Coating thickness tester",
+    "Muffle furnace",
+    "Precision weighing scale",
+    "Raw material inspection equipment"
+  ]
+
+  const certifications = [
+    "ISO 9001:2015 quality system assurance certification",
+    "BSI Kitemark EN124:2015 for international product compliance",
+    "Quality and continuous improvement embedded in our culture, processes, recruitment, and training"
   ]
 
   return (
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <TestTube className="w-10 h-10 text-primary" />
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light mb-6">
-              {infrastructure.title}
+              Our Laboratory & Testing Facility
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              {infrastructure.description}
+              We ensure top-quality manufacturing of products in strict compliance with 
+              international standards. Each product undergoes thorough testing to meet required specifications. 
+              Our advanced in-house facilities are equipped for sand testing, raw material inspection, chemical 
+              analysis, load testing, and comprehensive quality control procedures. From raw material intake to 
+              production, quality testing, and final dispatch, every stage is closely overseen by our expert team. 
+              Utilizing spectrometers for precise results, we guarantee consistent product reliability and durability, 
+              meeting the highest industry standards.
             </p>
           </AnimatedText>
         </div>
 
         {/* Laboratory Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -78,16 +123,16 @@ export default function TestingInfrastructurePage() {
           </AnimatedText>
         </div>
 
-        {/* Testing Equipment */}
-        <Section className="mb-16">
+        {/* Strength & Hardness Equipment */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Testing Equipment
+              Strength and Hardness Testing Equipment
             </h2>
           </AnimatedText>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testingEquipment.map((equipment, index) => (
+            {strengthEquipment.map((equipment, index) => (
               <AnimatedText key={equipment.title} delay={index * 0.1}>
                 <div className="bg-background rounded-xl p-8 shadow-sm border border-border/20">
                   <div className="flex items-start space-x-4">
@@ -105,21 +150,26 @@ export default function TestingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Quality Control Process */}
-        <Section className="mb-16">
+        {/* Microscopy & Chemical Analysis */}
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Quality Control Process
+              Microscopy and Chemical Analysis
             </h2>
           </AnimatedText>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {qualityChecks.map((check, index) => (
-              <AnimatedText key={check} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                    <span className="text-muted-foreground">{check}</span>
+            {microscopyEquipment.map((equipment, index) => (
+              <AnimatedText key={equipment.title} delay={index * 0.1}>
+                <div className="bg-background rounded-xl p-8 shadow-sm border border-border/20">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl flex-shrink-0">
+                      {equipment.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl mb-3">{equipment.title}</h3>
+                      <p className="text-muted-foreground">{equipment.description}</p>
+                    </div>
                   </div>
                 </div>
               </AnimatedText>
@@ -127,43 +177,77 @@ export default function TestingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Testing Standards */}
-        <Section className="mb-16">
+        {/* Sand Testing Equipment */}
+        <Section>
+          <AnimatedText>
+            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
+              Sand Testing Equipment
+            </h2>
+          </AnimatedText>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {sandTestingEquipment.map((equipment, index) => (
+              <AnimatedText key={equipment.title} delay={index * 0.1}>
+                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+                  <div className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-display text-lg mb-2">{equipment.title}</h3>
+                      <p className="text-muted-foreground text-sm">{equipment.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedText>
+            ))}
+          </div>
+        </Section>
+
+        {/* Specialized Equipment */}
+        <Section>
+          <AnimatedText>
+            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
+              Specialized Testing and Laboratory Equipment
+            </h2>
+          </AnimatedText>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {specializedEquipment.map((equipment, index) => (
+              <AnimatedText key={equipment} delay={index * 0.1}>
+                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+                    <span className="text-muted-foreground">{equipment}</span>
+                  </div>
+                </div>
+              </AnimatedText>
+            ))}
+          </div>
+        </Section>
+
+        {/* Certifications */}
+        <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
-                Testing Standards & Certifications
+                Certifications
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-8 h-8 text-primary" />
+              <div className="grid grid-cols-1 gap-6">
+                {certifications.map((cert, index) => (
+                  <div key={index} className="text-center">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="text-lg text-muted-foreground">{cert}</p>
                   </div>
-                  <h3 className="font-display text-xl mb-2">ISO Standards</h3>
-                  <p className="text-muted-foreground">Compliance with international quality standards</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">IS Standards</h3>
-                  <p className="text-muted-foreground">Adherence to Indian Standard specifications</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <TestTube className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-display text-xl mb-2">Railway Standards</h3>
-                  <p className="text-muted-foreground">Specialized testing for railway applications</p>
-                </div>
+                ))}
               </div>
             </AnimatedText>
           </div>
         </Section>
 
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -184,30 +268,6 @@ export default function TestingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Testing Capabilities */}
-        <Section className="mb-16">
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Testing Capabilities
-            </h2>
-          </AnimatedText>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: "Chemical Analysis", description: "Precise elemental composition" },
-              { title: "Mechanical Testing", description: "Strength and durability assessment" },
-              { title: "Dimensional Inspection", description: "Accuracy and tolerance verification" },
-              { title: "Surface Analysis", description: "Finish and coating quality" }
-            ].map((capability, index) => (
-              <AnimatedText key={capability.title} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20 text-center">
-                  <h3 className="font-display text-lg mb-3">{capability.title}</h3>
-                  <p className="text-sm text-muted-foreground">{capability.description}</p>
-                </div>
-              </AnimatedText>
-            ))}
-          </div>
-        </Section>
 
         {/* CTA */}
         <Section className="text-center">

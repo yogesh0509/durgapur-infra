@@ -66,7 +66,7 @@ export default function QualityAssurancePage() {
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center">
           <AnimatedText>
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 mx-auto">
               <Shield className="w-10 h-10 text-primary" />
@@ -81,7 +81,7 @@ export default function QualityAssurancePage() {
         </div>
 
         {/* Quality Image */}
-        <div className="mb-16">
+        <div>
           <AnimatedText>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -95,7 +95,7 @@ export default function QualityAssurancePage() {
         </div>
 
         {/* Quality Stages */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Quality Control Stages
@@ -122,7 +122,7 @@ export default function QualityAssurancePage() {
         </Section>
 
         {/* QA Process */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Quality Assurance Process
@@ -147,7 +147,7 @@ export default function QualityAssurancePage() {
         </Section>
 
         {/* Quality Metrics */}
-        <Section className="mb-16">
+        <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
@@ -177,7 +177,7 @@ export default function QualityAssurancePage() {
         </Section>
 
         {/* Key Features */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Key Features
@@ -199,7 +199,7 @@ export default function QualityAssurancePage() {
         </Section>
 
         {/* Quality Tools */}
-        <Section className="mb-16">
+        <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Quality Tools & Techniques

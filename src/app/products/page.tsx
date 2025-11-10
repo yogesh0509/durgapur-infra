@@ -14,6 +14,7 @@ export default function ProductsPage() {
     'municipal': <Building2 className="w-12 h-12 text-primary" />,
     'metallurgical': <Cog className="w-12 h-12 text-primary" />,
     'railway': <Train className="w-12 h-12 text-primary" />,
+    'urban': <Building2 className="w-12 h-12 text-primary" />,
   }
 
   return (
