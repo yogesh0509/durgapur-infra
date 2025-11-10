@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from "react"
 import { AnimatedText } from "@/components/ui/animated-text"
 import { Section } from "@/components/ui/section"
 import { Button } from "@/components/ui/button"
@@ -10,6 +11,45 @@ import { manufacturingData } from "@/lib/data"
 import Link from "next/link"
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    productType: "",
+    message: "",
+  })
+
+  const whatsappNumber = "9609969999"
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    const { firstName, lastName, email, phone, productType, message } = formData
+
+    // Format the message
+    const formattedMessage = `
+*New Product Inquiry*
+
+👤 *Name:* ${firstName} ${lastName}
+📧 *Email:* ${email}
+📞 *Phone:* ${phone || "N/A"}
+🏗️ *Product Interest:* ${productType}
+📝 *Requirements:* 
+${message}
+    `.trim()
+
+    // Encode for URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`
+
+    // Open WhatsApp
+    window.open(whatsappUrl, "_blank")
+  }
+
   return (
     <Layout>
       <Section className="pt-24 sm:pt-32 pb-8 sm:pb-16">
@@ -30,7 +70,7 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
             className="bg-secondary/5 rounded-xl p-6 sm:p-8"
           >
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium mb-2">
@@ -40,6 +80,8 @@ export default function ContactPage() {
                     type="text"
                     id="firstName"
                     name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                     required
                   />
@@ -52,6 +94,8 @@ export default function ContactPage() {
                     type="text"
                     id="lastName"
                     name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                     required
                   />
@@ -65,6 +109,8 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 />
@@ -77,6 +123,8 @@ export default function ContactPage() {
                   type="tel"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
               </div>
@@ -87,16 +135,19 @@ export default function ContactPage() {
                 <select
                   id="productType"
                   name="productType"
+                  value={formData.productType}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 >
                   <option value="">Select a product type</option>
-                  <option value="municipal">Municipal Castings</option>
-                  <option value="railway">Railway Castings</option>
-                  <option value="metallurgical">Ingot Moulds & Centre Columns</option>
-                  <option value="automobile">Automobile Parts</option>
-                  <option value="custom">Custom Castings</option>
-                  <option value="quote">Request Quote</option>
+                  {manufacturingData.products.map(product => (
+                    <option value={product.title} key={product.id}>
+                      {product.title}
+                    </option>
+                  ))}
+                  <option value="Custom Castings">Custom Castings</option>
+                  <option value="Request Quote">Request Quote</option>
                 </select>
               </div>
               <div>
@@ -107,12 +158,14 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 ></textarea>
               </div>
               <Button type="submit" size="lg" className="w-full">
-                Send Inquiry
+                Send Inquiry via WhatsApp
               </Button>
             </form>
           </motion.div>
@@ -196,4 +249,4 @@ export default function ContactPage() {
       </Section>
     </Layout>
   )
-} 
+}

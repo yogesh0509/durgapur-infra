@@ -9,11 +9,15 @@ import Link from "next/link"
 import Image from "next/image"
 import productsData from "@/lib/data/products.json"
 import { useRouter } from "next/navigation"
+import React from "react"
 
-export default function RailwayProductDetailPage({ params }: { params: { id: string } }) {
+export default function RailwayProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter()
   const railwayProducts = productsData.railway.products
-  const product = railwayProducts.find(p => p.id === params.id)
+
+  // Unwrap params, then access id
+  const { id } = React.use(params)
+  const product = railwayProducts.find(p => p.id === id)
 
   if (!product) {
     router.push('/products/railway')

@@ -9,13 +9,15 @@ import Link from "next/link"
 import Image from "next/image"
 import productsData from "@/lib/data/products.json"
 import { useRouter } from "next/navigation"
+import React from "react"
 
-export default function DuctileIronBollardsPage({ params }: { params: { id: string } }) {
+export default function DuctileIronBollardsPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = React.use(params)
   const router = useRouter()
   const bollards = productsData.bollards
   const section = bollards.sections["ductile iron"]
 
-  if (params.id !== "ductile-iron") {
+  if (id !== "ductile-iron") {
     router.push("/products/bollards")
     return null
   }

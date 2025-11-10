@@ -147,75 +147,34 @@ export interface ManufacturingData {
   }>
 }
 
-export const projects: Project[] = [
-  {
-    id: 'railway',
-    title: 'Railway Infrastructure Castings',
-    location: 'Durgapur',
-    type: 'Railway Components',
-    description: 'Custom iron castings for locomotive and rail infrastructure. Built to meet stringent railway specifications and safety standards.',
-    year: '2024',
-    area: 'Custom Orders',
-    images: [
-      '/images/dippl/railway/brake-block.jpg',
-    ],
-    featured: true,
-    category: 'railway',
-    tags: ['railway', 'locomotive', 'safety-compliant', 'custom casting']
-  },
-  {
-    id: 'hardscape',
-    title: 'Urban Hardscape Projects',
-    location: 'Durgapur',
-    type: 'Hardscape',
-    description: 'High-quality hardscape products for urban and industrial areas.',
-    year: '2024',
-    area: 'Multiple Sites',
-    images: [
-      '/images/dippl/hardscape/tree-grates.jpg'
-    ],
-    featured: true,
-    category: 'urban',
-    tags: ['hardscape', 'urban', 'infrastructure']
-  }
-];
+// Import manufacturing data
+import dipplData from './data/dippl.json'
 
-export const services: Service[] = [
-  {
-    id: 'railway',
-    title: 'Locomotive / Railway Castings',
-    description: 'Custom iron castings for locomotive and rail infrastructure meeting stringent railway specifications and safety standards.',
-    icon: 'Train',
-    features: [
-      'Locomotive components',
-      'Track infrastructure parts',
-      'Signal equipment castings',
-      'Railway safety components'
-    ]
-  },
-  {
-    id: 'hardscape',
-    title: 'Hardscape Castings',
-    description: 'Durable cast iron solutions for urban and industrial hardscape needs.',
-    icon: 'Grid',
-    features: [
-      'Detectable warning plates',
-      'Tree grates',
-      'Trench grates for water management'
-    ]
-  },
-  {
-    id: 'bollards',
-    title: 'Architectural Bollards',
-    description: 'Stylish and functional bollards for safe environments.',
-    icon: 'Circle',
-    features: [
-      'Visual & physical barriers',
-      'Durable construction',
-      'Architectural design options'
-    ]
-  }
-];
+export const manufacturingData: ManufacturingData = dipplData
+
+// Projects: derive dynamically from manufacturingData.products
+export const projects: Project[] = manufacturingData.products.map((prod: any) => ({
+  id: prod.id,
+  title: prod.title + (prod.id === 'hardscape' ? ' Projects' : prod.id === 'bollards' ? ' Installations' : ' Castings'),
+  location: 'Durgapur',
+  type: prod.title,
+  description: prod.description,
+  year: '2024', // optionally make dynamic
+  area: prod.id === 'railway-casting' ? 'Custom Orders' : 'Multiple Sites',
+  images: prod.id === 'railway-casting' ? ['/images/dippl/railway/brake-block.jpg'] : [prod.image ?? ''],
+  featured: true,
+  category: prod.category,
+  tags: [prod.id, ...(prod.features ?? [])]
+}))
+
+// Services: derive dynamically as well
+export const services: Service[] = manufacturingData.products.map((prod: any) => ({
+  id: prod.id,
+  title: prod.title,
+  description: prod.description,
+  icon: prod.id === 'railway-casting' ? 'Train' : prod.id === 'hardscape' ? 'Grid' : prod.id === 'bollards' ? 'Circle' : 'Package',
+  features: prod.features ?? []
+}))
 
 export const processSteps = [
   {
@@ -271,9 +230,4 @@ export const brandValues = [
     description: 'Building lasting relationships through reliable delivery and service excellence.',
     icon: 'Users'
   }
-];
-
-// Import manufacturing data
-import dipplData from './data/dippl.json'
-
-export const manufacturingData: ManufacturingData = dipplData 
+]; 

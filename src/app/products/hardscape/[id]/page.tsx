@@ -1,5 +1,6 @@
 'use client'
 
+import React, { useEffect } from "react"
 import { AnimatedText } from "@/components/ui/animated-text"
 import { Section } from "@/components/ui/section"
 import { Button } from "@/components/ui/button"
@@ -10,8 +11,9 @@ import Image from "next/image"
 import productsData from "@/lib/data/products.json"
 import { useRouter } from "next/navigation"
 
-export default function HardscapeProductDetailPage({ params }: { params: { id: string } }) {
+export default function HardscapeProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter()
+  const { id } = React.use(params)
 
   // Combine all hardscape products from sections
   const dwp = productsData.hardscape.sections.detectableWarningPlates.products
@@ -19,16 +21,23 @@ export default function HardscapeProductDetailPage({ params }: { params: { id: s
   const trench = productsData.hardscape.sections.trenchGrates.products
   const allProducts = [...dwp, ...tree, ...trench]
 
-  const product = allProducts.find(p => p.id === params.id)
+  const product = allProducts.find(p => p.id === id)
+
+  // Redirect if product not found -- inside useEffect
+  useEffect(() => {
+    if (!product) {
+      router.push("/products/hardscape")
+    }
+  }, [product, router])
+
   if (!product) {
-    router.push('/products/hardscape')
-    return null
+    return null // or a loading indicator
   }
 
   // Identify which section it belongs to
   const section =
-    dwp.find(p => p.id === params.id) ? 'detectableWarningPlates' :
-    tree.find(p => p.id === params.id) ? 'treeGrates' :
+    dwp.find(p => p.id === id) ? 'detectableWarningPlates' :
+    tree.find(p => p.id === id) ? 'treeGrates' :
     'trenchGrates'
 
   const sectionData = productsData.hardscape.sections[section as keyof typeof productsData.hardscape.sections]
