@@ -11,3 +11,22 @@ products -
 * hardscape - reliance
 * railway (alliance)
 * automobile (will share)
+* base plate
+
+
+base plate
+
+Kacper Zygmunt
+10:26 PM
+spectre meter 
+microscope 
+Universal strength testing machine
+
+Kacper Zygmunt
+10:29 PM
+Our manufacturing process goes through a series of testing-
+The steel in its liquid state is tested in our Liquid Metal Lab using a spectre meter 
+
+The sand used for sand casting is thoroughly tested at our Sand Lab using various lab equipment 
+
+The final product is tested at our Finished Product Ductility lab using a Manhole testing machine and Pull out testing machine

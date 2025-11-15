@@ -38,23 +38,22 @@ export default function DuctileIronBollardsPage({ params }: { params: Promise<{ 
 
         {/* Ductile Iron Products (All 3 Displayed Like Amazon Product Layout) */}
         {section.products.map((product, index) => (
-          <Section key={product.model} className="mb-24">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-              
+          <div key={product.model} className="mb-24">
+            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
               {/* Left - Image */}
-              <AnimatedText delay={index * 0.1}>
-                <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
+              <AnimatedText delay={index * 0.1} className="flex">
+                <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
                   <Image
                     src={product.image || "/images/placeholder.jpg"}
                     alt={product.name}
                     fill
-                    className="object-cover"
+                    className="object-contain p-8"
                   />
                 </div>
               </AnimatedText>
 
               {/* Right - Product Details */}
-              <div className="space-y-6">
+              <div className="space-y-6 flex flex-col justify-center">
                 <AnimatedText delay={0.1 + index * 0.1}>
                   <div>
                     <h2 className="font-display text-3xl sm:text-4xl font-light mb-4">
@@ -116,7 +115,7 @@ export default function DuctileIronBollardsPage({ params }: { params: Promise<{ 
                 </AnimatedText>
               </div>
             </div>
-          </Section>
+          </div>
         ))}
 
 

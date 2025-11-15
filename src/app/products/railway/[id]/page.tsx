@@ -43,12 +43,13 @@ export default function RailwayProductDetailPage({ params }: { params: Promise<{
           {/* Left - Image Gallery */}
           <AnimatedText>
             <div className="sticky top-24">
-              <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg mb-4">
+              <div className="w-full rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src={product.image || "/images/placeholder.jpg"}
                   alt={product.name}
-                  fill
-                  className="object-cover"
+                  width={800}
+                  height={800}
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

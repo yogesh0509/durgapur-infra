@@ -39,18 +39,18 @@ export default function RailwayCastingPage() {
               BRAKE BLOCKS
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8">
             {/* Left - Description */}
             <AnimatedText delay={0.1}>
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  High-quality cast iron brake blocks engineered for locomotive and freight car braking systems. 
+                  High-quality cast iron brake blocks engineered for locomotive and freight car braking systems.
                   Manufactured to meet stringent railway standards with consistent performance and durability.
                 </p>
                 <div className="bg-secondary/5 rounded-lg p-4">
                   <p className="text-xs text-muted-foreground">
-                    Our brake blocks are designed for optimal friction characteristics, heat dissipation, 
+                    Our brake blocks are designed for optimal friction characteristics, heat dissipation,
                     and extended service life in demanding railway applications.
                   </p>
                 </div>
@@ -59,12 +59,12 @@ export default function RailwayCastingPage() {
 
             {/* Right - Main Image */}
             <AnimatedText delay={0.2}>
-              <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+              <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
                 <Image
                   src={railwayData.products.find(p => p.id.includes('brake'))?.image || "/images/dippl/railway/brake-blocks.jpg"}
                   alt="Brake Blocks"
                   fill
-                  className="object-cover"
+                  className="object-contain p-8"
                 />
               </div>
             </AnimatedText>
@@ -112,16 +112,16 @@ export default function RailwayCastingPage() {
               COUNTER WEIGHTS
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8">
             {/* Left - Main Image */}
             <AnimatedText>
-              <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-                <Image
+            <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
+            <Image
                   src={railwayData.products.find(p => p.id.includes('weight'))?.image || "/images/dippl/railway/counter-weights.jpg"}
                   alt="Counter Weights"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </AnimatedText>
@@ -130,12 +130,12 @@ export default function RailwayCastingPage() {
             <AnimatedText delay={0.1}>
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Precision-manufactured counter weights for locomotive balance and optimal weight distribution. 
+                  Precision-manufactured counter weights for locomotive balance and optimal weight distribution.
                   Critical components ensuring stable operation and enhanced performance of railway systems.
                 </p>
                 <div className="bg-secondary/5 rounded-lg p-4">
                   <p className="text-xs text-muted-foreground">
-                    Engineered with precise specifications to meet railway industry standards, 
+                    Engineered with precise specifications to meet railway industry standards,
                     providing reliable weight distribution solutions for various locomotive configurations.
                   </p>
                 </div>
@@ -185,7 +185,7 @@ export default function RailwayCastingPage() {
               Railway Casting Solutions
             </h2>
             <p className="text-base text-muted-foreground mb-6 max-w-xl mx-auto">
-              Our railway castings are designed to meet the demanding requirements of modern rail infrastructure. 
+              Our railway castings are designed to meet the demanding requirements of modern rail infrastructure.
               Contact us for custom solutions and technical specifications.
             </p>
             <Button asChild>

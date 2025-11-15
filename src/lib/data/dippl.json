@@ -51,7 +51,8 @@
         "Custom solutions",
         "High reliability"
       ],
-      "category": "railway"
+      "category": "railway",
+      "image": "/images/dippl/railway/brake-block.jpg"
     },
     {
       "id": "bollards",
@@ -63,7 +64,8 @@
         "Optional lighting",
         "Durable construction"
       ],
-      "category": "urban"
+      "category": "urban",
+      "image": "/images/dippl/bollards/bollards-2.jpg"
     },
     {
       "id": "hardscape",
@@ -75,7 +77,8 @@
         "Minimal maintenance",
         "Industrial grade"
       ],
-      "category": "urban"
+      "category": "urban",
+      "image": "/images/dippl/hardscape/dwp-mini-hero.jpg.webp"
     }
   ],
   "infrastructure": {

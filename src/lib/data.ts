@@ -4,7 +4,6 @@ export interface Project {
   location: string
   type: string
   description: string
-  year: string
   area?: string
   images: string[]
   featured: boolean
@@ -61,6 +60,7 @@ export interface ManufacturingData {
     description: string
     features: string[]
     category: string
+    image: string
   }>
   infrastructure: {
     manufacturing: {
@@ -159,9 +159,8 @@ export const projects: Project[] = manufacturingData.products.map((prod: any) =>
   location: 'Durgapur',
   type: prod.title,
   description: prod.description,
-  year: '2024', // optionally make dynamic
-  area: prod.id === 'railway-casting' ? 'Custom Orders' : 'Multiple Sites',
-  images: prod.id === 'railway-casting' ? ['/images/dippl/railway/brake-block.jpg'] : [prod.image ?? ''],
+  area: 'Custom Orders',
+  images: [prod.image ?? ''],
   featured: true,
   category: prod.category,
   tags: [prod.id, ...(prod.features ?? [])]

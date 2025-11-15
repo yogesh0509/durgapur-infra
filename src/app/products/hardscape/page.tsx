@@ -80,6 +80,28 @@ export default function HardscapePage() {
           </div>
         </Section>
 
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
+          {hardscapeData.sections.detectableWarningPlates.products
+            .map((item, index) => (
+              <AnimatedText key={item.id} delay={0.1 + index * 0.05}>
+                <Link href={`/products/hardscape/${item.id}`}>
+                  <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
+                    <div className="relative aspect-square mb-2 rounded overflow-hidden bg-secondary/10">
+                      <Image
+                        src={item.image || "/images/placeholder.jpg"}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <p className="text-xs font-medium mb-1 line-clamp-2">{item.code}</p>
+                    <p className="text-xs text-muted-foreground">Contact for pricing</p>
+                  </div>
+                </Link>
+              </AnimatedText>
+            ))}
+        </div>
+
         {/* Tree Grates */}
         <Section className="mb-16">
           <AnimatedText>
@@ -109,7 +131,7 @@ export default function HardscapePage() {
                 </p>
                 <div className="bg-secondary/5 rounded-lg p-4">
                   <p className="text-xs text-muted-foreground">
-                    Designed for durability and aesthetic integration with urban landscapes. 
+                    Designed for durability and aesthetic integration with urban landscapes.
                     Our tree grates protect roots while allowing optimal air and water flow.
                   </p>
                 </div>
@@ -129,6 +151,28 @@ export default function HardscapePage() {
           </div>
         </Section>
 
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
+          {hardscapeData.sections.treeGrates.products
+            .map((item, index) => (
+              <AnimatedText key={item.id} delay={0.1 + index * 0.05}>
+                <Link href={`/products/hardscape/${item.id}`}>
+                  <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
+                    <div className="relative aspect-square mb-2 rounded overflow-hidden bg-secondary/10">
+                      <Image
+                        src={item.image || "/images/placeholder.jpg"}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <p className="text-xs font-medium mb-1 line-clamp-2">{item.code}</p>
+                    <p className="text-xs text-muted-foreground">Contact for pricing</p>
+                  </div>
+                </Link>
+              </AnimatedText>
+            ))}
+        </div>
+
         {/* Trench Grates */}
         <Section className="mb-16">
           <AnimatedText>
@@ -146,7 +190,7 @@ export default function HardscapePage() {
                 </p>
                 <div className="bg-secondary/5 rounded-lg p-4">
                   <p className="text-xs text-muted-foreground">
-                    Built for heavy-duty drainage applications, our trench grates ensure effective water flow 
+                    Built for heavy-duty drainage applications, our trench grates ensure effective water flow
                     while maintaining load-bearing performance for pedestrian and vehicular areas.
                   </p>
                 </div>
@@ -178,6 +222,28 @@ export default function HardscapePage() {
           </div>
         </Section>
 
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
+          {hardscapeData.sections.trenchGrates.products
+            .map((item, index) => (
+              <AnimatedText key={item.id} delay={0.1 + index * 0.05}>
+                <Link href={`/products/hardscape/${item.id}`}>
+                  <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
+                    <div className="relative aspect-square mb-2 rounded overflow-hidden bg-secondary/10">
+                      <Image
+                        src={item.image || "/images/placeholder.jpg"}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <p className="text-xs font-medium mb-1 line-clamp-2">{item.code}</p>
+                    <p className="text-xs text-muted-foreground">Contact for pricing</p>
+                  </div>
+                </Link>
+              </AnimatedText>
+            ))}
+        </div>
+
         {/* CTA Section */}
         <Section className="text-center bg-secondary/5 rounded-lg p-8">
           <AnimatedText>
@@ -185,7 +251,7 @@ export default function HardscapePage() {
               Hardscape Solutions for Modern Environments
             </h2>
             <p className="text-base text-muted-foreground mb-6 max-w-xl mx-auto">
-              Our hardscape products combine strength, functionality, and design to enhance public and urban spaces. 
+              Our hardscape products combine strength, functionality, and design to enhance public and urban spaces.
               Contact us to discuss specifications, customization, or project support.
             </p>
             <Button asChild>

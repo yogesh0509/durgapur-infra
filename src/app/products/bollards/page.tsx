@@ -37,14 +37,15 @@ export default function BollardsPage() {
         <Section className="mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <AnimatedText>
-              <div className="relative aspect-square lg:aspect-auto lg:h-[500px] rounded-xl overflow-hidden shadow-lg">
+              <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
                 <Image
                   src={ductileIron.image || "/images/placeholder.jpg"}
                   alt="Ductile Iron Bollards"
                   fill
-                  className="object-cover"
+                  className="object-contain p-8"
                 />
               </div>
+
             </AnimatedText>
 
             <div className="space-y-6">

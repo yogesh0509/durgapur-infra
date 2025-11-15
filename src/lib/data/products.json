@@ -51,18 +51,18 @@
     "id": "hardscape",
     "title": "Hardscape",
     "description": "Explore high-quality hardscape products designed to excel in urban and industrial environments. Crafted from durable cast iron, these products are built to withstand harsh conditions with minimal maintenance.",
-    "image": "/images/dippl/hardscape/main.jpg",
+    "image": "/images/dippl/hardscape/dwp-mini-hero.jpg.webp",
     "sections": {
       "detectableWarningPlates": {
         "title": "Detectable Warning Plates",
         "description": "Reliance Foundry's detectable warning plates enhance pedestrian safety by providing tactile surface indicators that guide visually impaired individuals. These plates mark transitions between sidewalks and streets, improving accessibility for all. Made from raw cast iron, they develop a rich red-brown patina that offers excellent visual contrast while ensuring long-term durability.",
-        "image": "/images/dippl/hardscape/dwp.jpg",
+        "image": "/images/dippl/hardscape/dwp-mini-hero.jpg.webp",
         "products": [
           {
             "id": "r-4985-30",
             "code": "R-4985-30",
             "name": "R-4985-30",
-            "image": "/images/dippl/hardscape/dwp/r-4985-30.jpg",
+            "image": "/images/dippl/hardscape/R-4985-30.webp",
             "color": "Raw Cast Iron (Red-Brown Patina)",
             "material": "Cast Iron",
             "finish": "Raw",
@@ -74,7 +74,7 @@
             "id": "r-4985-24",
             "code": "R-4985-24",
             "name": "R-4985-24",
-            "image": "/images/dippl/hardscape/dwp/r-4985-24.jpg",
+            "image": "/images/dippl/hardscape/4985-24.webp",
             "color": "Raw Cast Iron (Red-Brown Patina)",
             "material": "Cast Iron",
             "finish": "Raw",
@@ -87,13 +87,13 @@
       "treeGrates": {
         "title": "Tree Grates",
         "description": "Reliance Foundry's tree grates protect trees and their root systems from urban wear and tear while enhancing the aesthetic appeal of streetscapes. The grates allow air, water, and light to reach tree roots, supporting healthy growth. Designed to meet ADA standards, these cast iron grates provide a smooth, safe walking surface that eliminates tripping hazards for pedestrians.",
-        "image": "/images/dippl/hardscape/tree-grates.jpg",
+        "image": "/images/dippl/hardscape/tree-grate-mini-hero.jpg.webp",
         "products": [
           {
             "id": "r-8870-cosmopolitan",
             "code": "R-8870 Cosmopolitan",
             "name": "R-8870 Cosmopolitan",
-            "image": "/images/dippl/hardscape/tree-grates/r-8870.jpg",
+            "image": "/images/dippl/hardscape/R-8870-hardscape-1.jpg.webp",
             "color": "Raw Cast Iron",
             "material": "Cast Iron",
             "finish": "Raw",
@@ -105,7 +105,7 @@
             "id": "r-8871-solana",
             "code": "R-8871 Solana",
             "name": "R-8871 Solana",
-            "image": "/images/dippl/hardscape/tree-grates/r-8871.jpg",
+            "image": "/images/dippl/hardscape/R-8871-hardscape-1.jpg.webp",
             "color": "Raw Cast Iron",
             "material": "Cast Iron",
             "finish": "Raw",
@@ -118,13 +118,13 @@
       "trenchGrates": {
         "title": "Trench Grates",
         "description": "Reliance Foundry's trench grates deliver effective water management for a variety of settings, from pedestrian walkways to industrial facilities. These cast iron grates prevent flooding in areas such as parking lots, driveways, and warehouses by rapidly draining excess water. With their raw finish, they form a protective patina that resists corrosion while blending seamlessly with architectural designs.",
-        "image": "/images/dippl/hardscape/trench-grates.jpg",
+        "image": "/images/dippl/hardscape/drain-trench-mini-hero.jpg.webp",
         "products": [
           {
             "id": "r-4989-carriage-walk",
             "code": "R-4989 Carriage Walk",
             "name": "R-4989 Carriage Walk",
-            "image": "/images/dippl/hardscape/trench-grates/r-4989-carriage.jpg",
+            "image": "/images/dippl/hardscape/R-4989-CARRIAGE-hardscape-1.webp",
             "color": "Raw Cast Iron (Patina)",
             "material": "Cast Iron",
             "finish": "Raw",
@@ -137,7 +137,7 @@
             "id": "r-4989-greek-key",
             "code": "R-4989 Greek Key",
             "name": "R-4989 Greek Key",
-            "image": "/images/dippl/hardscape/trench-grates/r-4989-greek.jpg",
+            "image": "/images/dippl/hardscape/R-4989-GREEK-hardscape-1.webp",
             "color": "Raw Cast Iron (Patina)",
             "material": "Cast Iron",
             "finish": "Raw",

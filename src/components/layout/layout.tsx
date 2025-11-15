@@ -8,6 +8,7 @@ import { Instagram, Facebook, Linkedin, Mail, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
 import { cn } from '@/lib/utils'
+import { manufacturingData } from "@/lib/data"
 
 interface LayoutProps {
   children: ReactNode
@@ -22,7 +23,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
   return (
     <>
       <Header className={headerClassName} isOverHero={isOverHero} />
-      
+
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +38,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
           {children}
         </motion.div>
       </AnimatePresence>
-      
+
       <footer className="bg-secondary/5 border-t">
         <div className="container py-12 md:py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -70,7 +71,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                 </Button>
               </div>
             </div>
-            
+
             {/* Quick Links */}
             <div>
               <h3 className="font-display text-lg mb-4">Quick Links</h3>
@@ -83,7 +84,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                   { name: 'Contact Us', href: '/contact' },
                 ].map((link) => (
                   <li key={link.name}>
-                    <Link 
+                    <Link
                       href={link.href}
                       className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                     >
@@ -93,32 +94,30 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                 ))}
               </ul>
             </div>
-            
+
             {/* Products */}
             <div>
               <h3 className="font-display text-lg mb-4">Products</h3>
-              <ul className="space-y-2">
-                {[
-                  'Municipal Castings',
-                  'Railway Castings',
-                  'Automobile Parts',
-                  'Custom Castings',
-                ].map((product) => (
-                  <li key={product}>
-                    <span className="text-sm text-muted-foreground">
-                      {product}
-                    </span>
+              <ul className="space-y-3">
+                {manufacturingData.products.map(product => (
+                  <li key={product.id}>
+                    <Link className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      href={`/products/${product.id}`}>{product.title}</Link>
                   </li>
                 ))}
+                <li>
+                  <Link className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    href="/contact?type=custom">Custom Castings</Link>
+                </li>
               </ul>
             </div>
-            
+
             {/* Contact */}
             <div>
               <h3 className="font-display text-lg mb-4">Contact</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link 
+                  <Link
                     href="mailto:info@dippl.in"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center"
                   >
@@ -127,7 +126,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
+                  <Link
                     href="tel:+91-9609969999"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center"
                   >
@@ -146,7 +145,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
               </ul>
             </div>
           </div>
-          
+
           {/* Bottom */}
           <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
             <p>&copy; {new Date().getFullYear()} Durgapur Infra Projects Pvt. Ltd. All rights reserved.</p>
