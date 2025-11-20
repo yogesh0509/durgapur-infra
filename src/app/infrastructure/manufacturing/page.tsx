@@ -14,11 +14,6 @@ export default function ManufacturingInfrastructurePage() {
 
   const facilityImages = [
     {
-      src: "/images/dippl/manufacturing/manufacturing-1.jpeg",
-      alt: "Manufacturing Facility Overview",
-      title: "State-of-the-Art Foundry"
-    },
-    {
       src: "/images/dippl/manufacturing/manufacturing-2.jpeg",
       alt: "Production Line",
       title: "Advanced Production Line"
@@ -104,7 +99,7 @@ export default function ManufacturingInfrastructurePage() {
         </div>
 
         {/* Facility Images - 3 Image Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {facilityImages.map((image, index) => (
             <AnimatedText key={image.alt} delay={index * 0.1}>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">

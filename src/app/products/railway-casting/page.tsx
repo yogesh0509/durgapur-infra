@@ -222,7 +222,7 @@ export default function RailwayCastingPage() {
             <AnimatedText delay={0.2}>
               <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
                 <Image
-                  src={railwayData.products.find(p => p.id.includes('base-plate'))?.image || "/images/dippl/railway-casting/base-plate.jpg"}
+                  src={railwayData.products.find(p => p.id.includes('base-plate'))?.image || "/images/dippl/railway-casting/base-plate.webp"}
                   alt="Base Plate"
                   fill
                   className="object-contain p-8"

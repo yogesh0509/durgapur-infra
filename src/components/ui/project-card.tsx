@@ -47,15 +47,21 @@ export function ProjectCard({
           "relative overflow-hidden rounded-lg aspect-[4/3]",
           isProductImage && "bg-white"
         )}>
-          <Image
-            src={project.images[0]}
-            alt={project.title}
-            fill
-            className={cn(
-              "transition-transform duration-700 group-hover:scale-105",
-              isProductImage ? "object-contain" : "object-cover"
-            )}
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src={project.images[0]}
+              alt={project.title}
+              fill
+              className={cn(
+                "transition-transform duration-700 group-hover:scale-105",
+                isProductImage ? "object-contain" : "object-cover"
+              )}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0" />
+            <div className="absolute bottom-0 left-0 right-0 p-4">
+              <h3 className="text-white font-display text-lg sm:text-xl mb-0">{project.title}</h3>
+            </div>
+          </div>
         </div>
       </Link>
     </motion.div>

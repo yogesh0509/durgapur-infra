@@ -213,7 +213,7 @@
         "id": "base-plate",
         "code": "Base Plate",
         "name": "Railway Base Plate",
-        "image": "/images/dippl/railway/base-plate.jpeg",
+        "image": "/images/dippl/railway/base-plate.webp",
         "color": "Black Painted",
         "material": "Cast Iron IS 1030:1998 Grade 280-520 W",
         "finish": "Grinding, Gauging, Heat Treatment, Painting",

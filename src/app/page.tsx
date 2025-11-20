@@ -92,10 +92,23 @@ export default function Home() {
         subtitle="Precision-engineered ductile iron castings for diverse industrial applications—each product meets the highest quality standards."
         centered
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
           {featuredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
+          {/* Add your custom static card here */}
+          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
+            <img
+              src="/images/dippl/municipal-casting/2.jpg"
+              alt="Single Seal Flat Top"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-white font-display text-xl mb-2">Single Seal Flat Top</h3>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="mt-10 sm:mt-12 text-center">
           <Button asChild size="lg" variant="outline">

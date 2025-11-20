@@ -48,29 +48,6 @@ export default function TestingInfrastructurePage() {
     }
   ]
 
-  const sandTestingEquipment = [
-    {
-      title: "Green Comprehensive Sand Testing Machine",
-      description: "Advanced equipment for comprehensive green sand testing and quality control"
-    },
-    {
-      title: "Digital Compatibility Sand Tester",
-      description: "Precision digital sand compatibility testing for optimal mould quality"
-    },
-    {
-      title: "Digital Sand Siever",
-      description: "Automated digital sand sieving for particle size analysis"
-    },
-    {
-      title: "Digital Sand Moisture Testing",
-      description: "Accurate moisture content measurement for sand preparation"
-    },
-    {
-      title: "Digital Permeability Tester",
-      description: "Sand permeability testing for gas venting and casting quality assurance"
-    }
-  ]
-
   const specializedEquipment = [
     "Pull-out and tilt test machine",
     "Coating thickness tester",
@@ -98,12 +75,12 @@ export default function TestingInfrastructurePage() {
               Our Laboratory & Testing Facility
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              We ensure top-quality manufacturing of products in strict compliance with 
-              international standards. Each product undergoes thorough testing to meet required specifications. 
-              Our advanced in-house facilities are equipped for sand testing, raw material inspection, chemical 
-              analysis, load testing, and comprehensive quality control procedures. From raw material intake to 
-              production, quality testing, and final dispatch, every stage is closely overseen by our expert team. 
-              Utilizing spectrometers for precise results, we guarantee consistent product reliability and durability, 
+              We ensure top-quality manufacturing of products in strict compliance with
+              international standards. Each product undergoes thorough testing to meet required specifications.
+              Our advanced in-house facilities are equipped for sand testing, raw material inspection, chemical
+              analysis, load testing, and comprehensive quality control procedures. From raw material intake to
+              production, quality testing, and final dispatch, every stage is closely overseen by our expert team.
+              Utilizing spectrometers for precise results, we guarantee consistent product reliability and durability,
               meeting the highest industry standards.
             </p>
           </AnimatedText>
@@ -113,29 +90,12 @@ export default function TestingInfrastructurePage() {
         <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Strength and Hardness Testing Equipment
+              Manhole cover load testing machine
             </h2>
           </AnimatedText>
 
           {/* Featured Images for Strength Testing */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <AnimatedText delay={0.1}>
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
-                <Image
-                  src="/images/dippl/manufacturing/testing-1.jpeg"
-                  alt="Universal Testing Machine Display"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-white font-display text-xl mb-2">Universal Testing Machine</h3>
-                    <p className="text-white/90 text-sm">Digital control system for precise testing</p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedText>
-
             <AnimatedText delay={0.2}>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
                 <Image
@@ -146,14 +106,28 @@ export default function TestingInfrastructurePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-white font-display text-xl mb-2">Load Testing Machine</h3>
-                    <p className="text-white/90 text-sm">100-tonne capacity for comprehensive analysis</p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+
+            <AnimatedText delay={0.1}>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/images/dippl/manufacturing/testing-1.jpeg"
+                  alt="Universal Testing Machine Display"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-display text-xl mb-2">Digital Monitor</h3>
                   </div>
                 </div>
               </div>
             </AnimatedText>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {strengthEquipment.map((equipment, index) => (
               <AnimatedText key={equipment.title} delay={index * 0.1}>
@@ -219,6 +193,94 @@ export default function TestingInfrastructurePage() {
           </div>
         </Section>
 
+        {/* Servo Based Pull-Out Testing Machine */}
+        <Section>
+          <AnimatedText>
+            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
+              Servo Based Pull-Out Testing Machine
+            </h2>
+          </AnimatedText>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+
+            {/* Image placeholder */}
+            <AnimatedText delay={0.1}>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/images/dippl/manufacturing/testing-3.jpeg"
+                  alt="Servo Based Pull-Out Testing Machine"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/0">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-display text-xl mb-2">50 kN Servo Testing</h3>
+                    <p className="text-white/90 text-sm">Automated pull-out testing with digital load monitoring</p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+
+            {/* Details */}
+            <AnimatedText delay={0.2}>
+              <div className="bg-background rounded-xl p-8 shadow-sm border border-border/20 space-y-4">
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Capacity 50 kN with 0.01 kN least count
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    EN-124-2 compliant testing system
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Ram Stroke 300 mm, Ram Diameter 75 mm
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Digital load indicator (SuDAQ-18) with computerized control
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Hydraulic Power Pack with 2 HP motor and manual flow control
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Servo-controlled hydraulic speed system
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
+                  <p className="text-muted-foreground">
+                    Includes computer, software, printer, UPS and online graph facility
+                  </p>
+                </div>
+
+              </div>
+            </AnimatedText>
+
+          </div>
+        </Section>
+
+
         {/* Specialized Equipment */}
         <Section>
           <AnimatedText>
@@ -226,7 +288,7 @@ export default function TestingInfrastructurePage() {
               Specialized Testing and Laboratory Equipment
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {specializedEquipment.map((equipment, index) => (
               <AnimatedText key={equipment} delay={index * 0.1}>
@@ -248,7 +310,7 @@ export default function TestingInfrastructurePage() {
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
                 Certifications
               </h2>
-              
+
               <div className="grid grid-cols-1 gap-6">
                 {certifications.map((cert, index) => (
                   <div key={index} className="text-center">
@@ -270,7 +332,7 @@ export default function TestingInfrastructurePage() {
               Key Features
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {infrastructure.features.map((feature, index) => (
               <AnimatedText key={index} delay={index * 0.1}>
@@ -292,7 +354,7 @@ export default function TestingInfrastructurePage() {
               Quality You Can Trust
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Our comprehensive testing infrastructure ensures every casting meets the highest quality standards. 
+              Our comprehensive testing infrastructure ensures every casting meets the highest quality standards.
               Contact us for detailed quality specifications and certifications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
