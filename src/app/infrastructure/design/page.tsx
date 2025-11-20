@@ -7,7 +7,6 @@ import { Layout } from "@/components/layout/layout"
 import { manufacturingData } from "@/lib/data"
 import { ArrowRight, PenTool, Cpu, CheckCircle, Layers, Monitor } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function DesignInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.design
@@ -55,20 +54,6 @@ export default function DesignInfrastructurePage() {
               Our comprehensive design and development infrastructure enables us to create innovative casting solutions 
               tailored to your specific requirements. Partner with us for cutting-edge design excellence.
             </p>
-          </AnimatedText>
-        </div>
-
-        {/* Design Studio Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/design-studio.jpg"
-                alt="Design & Development Studio"
-                fill
-                className="object-cover"
-              />
-            </div>
           </AnimatedText>
         </div>
 

@@ -17,7 +17,7 @@
     "promoters": [
       {
         "name": "Mr. Manoj Garg",
-        "experience": "25+ years",
+        "experience": "30+ years",
         "focus": "Administration, Legal, HR, Finance, Expansion"
       },
       {
@@ -34,7 +34,6 @@
     "location": "Situated in Paschim Bardhaman, West Bengal. Connected via rail, road, highways. ~150 km from Howrah Railway Station & Kolkata Airport."
   },
   "expansion": {
-    "projectCost": "₹7.38 Cr",
     "capacity": "7,200 MTPA",
     "completion": "April 2025",
     "promotersContribution": "₹1.13 Cr",
@@ -65,7 +64,7 @@
         "Durable construction"
       ],
       "category": "urban",
-      "image": "/images/dippl/bollards/bollards-2.jpg"
+      "image": "/images/dippl/bollards/bollards-1.webp"
     },
     {
       "id": "hardscape",
@@ -254,11 +253,11 @@
   },
   "contact": {
     "office": {
-      "address": "6, Brabourne Road, 3rd Floor, Room 305–306, Kolkata, West Bengal – 700001",
+      "address": "11/A MAHARSHI DEBENDRA ROAD, 3rd FLOOR, ROOM NO.-4, Barabazar, Kolkata-700007, West Bengal, India,",
       "type": "Registered Office"
     },
     "factory": {
-      "address": "JL No. 58, Gopalpur Gram Panchayat, P.S. Kanksa, Village Bamunara, Dist. Paschim Bardhaman, West Bengal – 713212",
+      "address": "Bamunara Industrial Area, Durgapur, Dist. Paschim Bardhaman, West Bengal – 713212",
       "type": "Factory"
     },
     "phone": "+91-9609969999",

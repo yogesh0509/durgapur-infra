@@ -12,6 +12,24 @@ import Image from "next/image"
 export default function ManufacturingInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.manufacturing
 
+  const facilityImages = [
+    {
+      src: "/images/dippl/manufacturing/manufacturing-1.jpeg",
+      alt: "Manufacturing Facility Overview",
+      title: "State-of-the-Art Foundry"
+    },
+    {
+      src: "/images/dippl/manufacturing/manufacturing-2.jpeg",
+      alt: "Production Line",
+      title: "Advanced Production Line"
+    },
+    {
+      src: "/images/dippl/manufacturing/manufacturing-3.jpeg",
+      alt: "Quality Control Department",
+      title: "Quality Assurance"
+    }
+  ]
+
   const meltingEquipment = [
     {
       title: "Induction Furnaces",
@@ -85,18 +103,25 @@ export default function ManufacturingInfrastructurePage() {
           </AnimatedText>
         </div>
 
-        {/* Facility Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/foundry-facility.jpg"
-                alt="Manufacturing Facility"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </AnimatedText>
+        {/* Facility Images - 3 Image Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {facilityImages.map((image, index) => (
+            <AnimatedText key={image.alt} delay={index * 0.1}>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-display text-lg">{image.title}</h3>
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+          ))}
         </div>
 
         {/* Manufacturing Equipment */}
@@ -180,10 +205,6 @@ export default function ManufacturingInfrastructurePage() {
                 <div>
                   <div className="text-4xl font-bold text-primary mb-2">7,200</div>
                   <div className="text-muted-foreground">MTPA Capacity</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-accent mb-2">₹7.38</div>
-                  <div className="text-muted-foreground">Crore Investment</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-primary mb-2">April 2025</div>

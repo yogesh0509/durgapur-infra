@@ -61,7 +61,7 @@ export default function RailwayCastingPage() {
             <AnimatedText delay={0.2}>
               <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
                 <Image
-                  src={railwayData.products.find(p => p.id.includes('brake'))?.image || "/images/dippl/railway/brake-blocks.jpg"}
+                  src={railwayData.products.find(p => p.id.includes('brake'))?.image || "/images/dippl/railway-casting/brake-blocks.jpg"}
                   alt="Brake Blocks"
                   fill
                   className="object-contain p-8"
@@ -76,7 +76,7 @@ export default function RailwayCastingPage() {
               .filter(item => item.id.includes('brake'))
               .map((item, index) => (
                 <AnimatedText key={item.id} delay={0.1 + index * 0.05}>
-                  <Link href={`/products/railway/${item.id}`}>
+                  <Link href={`/products/railway-casting/${item.id}`}>
                     <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
                       <div className="relative aspect-square mb-2 rounded overflow-hidden bg-secondary/10">
                         <Image
@@ -97,7 +97,7 @@ export default function RailwayCastingPage() {
           <div className="text-center">
             <AnimatedText>
               <Button asChild size="lg">
-                <Link href="/products/railway/brake-block">
+                <Link href="/products/railway-casting/brake-block">
                   EXPLORE BRAKE BLOCKS <ArrowRight className="ml-2" />
                 </Link>
               </Button>
@@ -118,7 +118,7 @@ export default function RailwayCastingPage() {
             <AnimatedText>
             <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
             <Image
-                  src={railwayData.products.find(p => p.id.includes('weight'))?.image || "/images/dippl/railway/counter-weights.jpg"}
+                  src={railwayData.products.find(p => p.id.includes('weight'))?.image || "/images/dippl/railway-casting/counter-weights.jpg"}
                   alt="Counter Weights"
                   fill
                   className="object-contain"
@@ -149,7 +149,7 @@ export default function RailwayCastingPage() {
               .filter(item => item.id.includes('weight'))
               .map((item, index) => (
                 <AnimatedText key={item.id} delay={0.1 + index * 0.05}>
-                  <Link href={`/products/railway/${item.id}`}>
+                  <Link href={`/products/railway-casting/${item.id}`}>
                     <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
                       <div className="relative aspect-square mb-2 rounded overflow-hidden bg-secondary/10">
                         <Image
@@ -170,8 +170,72 @@ export default function RailwayCastingPage() {
           <div className="text-center">
             <AnimatedText>
               <Button asChild size="lg">
-                <Link href="/products/railway/counter-weight">
+                <Link href="/products/railway-casting/counter-weight">
                   EXPLORE COUNTER WEIGHTS <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+            </AnimatedText>
+          </div>
+        </Section>
+
+        {/* Base Plate Section */}
+        <Section className="mb-16">
+          <AnimatedText>
+            <h2 className="font-display text-3xl sm:text-4xl font-light mb-6">
+              BASE PLATE
+            </h2>
+          </AnimatedText>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8">
+            {/* Left - Description */}
+            <AnimatedText delay={0.1}>
+              <div className="space-y-4">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  High-strength base plates manufactured to IS 1030:1998 Grade 280-520 W standards. 
+                  Essential structural components for railway track systems, providing stable foundation and load distribution.
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="bg-secondary/5 rounded-lg p-4">
+                    <h3 className="text-sm font-medium mb-2">Technical Specifications</h3>
+                    <ul className="text-xs text-muted-foreground space-y-1">
+                      <li>• Standard: IS 1030:1998 Grade 280-520 W</li>
+                      <li>• Dimensions: 600 x 180 mm</li>
+                      <li>• Heat Treatment: Required</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-secondary/5 rounded-lg p-4">
+                    <h3 className="text-sm font-medium mb-2">Finishing Processes</h3>
+                    <ul className="text-xs text-muted-foreground space-y-1">
+                      <li>• Precision grinding for exact tolerances</li>
+                      <li>• Gauging for dimensional accuracy</li>
+                      <li>• Heat treatment for enhanced strength</li>
+                      <li>• Protective painting for corrosion resistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </AnimatedText>
+
+            {/* Right - Main Image */}
+            <AnimatedText delay={0.2}>
+              <div className="w-full h-full min-h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-white flex items-center justify-center">
+                <Image
+                  src={railwayData.products.find(p => p.id.includes('base-plate'))?.image || "/images/dippl/railway-casting/base-plate.jpg"}
+                  alt="Base Plate"
+                  fill
+                  className="object-contain p-8"
+                />
+              </div>
+            </AnimatedText>
+          </div>
+
+          <div className="text-center">
+            <AnimatedText>
+              <Button asChild size="lg">
+                <Link href="/products/railway-casting/base-plate">
+                  EXPLORE BASE PLATES <ArrowRight className="ml-2" />
                 </Link>
               </Button>
             </AnimatedText>

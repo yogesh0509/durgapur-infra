@@ -20,7 +20,7 @@ export default function ContactPage() {
     message: "",
   })
 
-  const whatsappNumber = "9609969999"
+  const whatsappNumber = "919609969999"
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })

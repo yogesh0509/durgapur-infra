@@ -11,37 +11,52 @@
         "image": "/images/dippl/bollards/bollards-2.jpg",
         "products": [
           {
+            "id": "r-7551",
+            "code": "R-7551",
             "name": "Bollard / Cover Fluted",
-            "model": "R-7551",
+            "image": "/images/dippl/bollards/bollards-1.webp",
+            "color": "Ductile Iron (Black or Painted Finish)",
             "material": "Ductile Iron",
-            "height": "35-3/4\"",
-            "max_interior_pipe_diameter": "4-1/2\"",
-            "description": "Decorative fluted bollard, line of three installed in front of building.",
-            "price": "640",
-            "currency": "USD",
-            "image": "/images/dippl/bollards/bollards-1.webp"
+            "finish": "Painted / Custom",
+            "dimensions": "Height: 35-3/4\", Max Interior Pipe Diameter: 4-1/2\"",
+            "weight": "Custom",
+            "applications": [
+              "Pedestrian safety",
+              "Building perimeter security",
+              "Architectural enhancement"
+            ]
           },
           {
+            "id": "r-7589",
+            "code": "R-7589",
             "name": "Bollard / Cover Non-Fluted",
-            "model": "R-7589",
+            "image": "/images/dippl/bollards/bollards-2.jpg",
+            "color": "Ductile Iron (Black or Painted Finish)",
             "material": "Ductile Iron",
-            "height": "35-3/4\"",
-            "max_interior_pipe_diameter": "4-1/2\"",
-            "description": "Non-fluted, long row guarding a building.",
-            "price": "795",
-            "currency": "USD",
-            "image": "/images/dippl/bollards/bollards-2.jpg"
+            "finish": "Painted / Custom",
+            "dimensions": "Height: 35-3/4\", Max Interior Pipe Diameter: 4-1/2\"",
+            "weight": "Custom",
+            "applications": [
+              "Vehicle deterrence",
+              "Long runs for area separation",
+              "Commercial building safety"
+            ]
           },
           {
+            "id": "r-7555",
+            "code": "R-7555",
             "name": "Bollard / Cover Fluted",
-            "model": "R-7555",
+            "image": "/images/dippl/bollards/bollards-3.jpg",
+            "color": "Ductile Iron (Black or Painted Finish)",
             "material": "Ductile Iron",
-            "height": "35\"",
-            "max_interior_pipe_diameter": "4-1/2\"",
-            "description": "Decorative, two on a path.",
-            "price": "653",
-            "currency": "USD",
-            "image": "/images/dippl/bollards/bollards-3.jpg"
+            "finish": "Painted / Custom",
+            "dimensions": "Height: 35\", Max Interior Pipe Diameter: 4-1/2\"",
+            "weight": "Custom",
+            "applications": [
+              "Walkway guidance",
+              "Site beautification",
+              "Pedestrian path safety"
+            ]
           }
         ]
       }
@@ -191,6 +206,24 @@
           "density": "Standard Cast Iron",
           "precision": "High",
           "balance": "Accurate weight distribution",
+          "certification": "Railway Approved"
+        }
+      },
+      {
+        "id": "base-plate",
+        "code": "Base Plate",
+        "name": "Railway Base Plate",
+        "image": "/images/dippl/railway/base-plate.jpeg",
+        "color": "Black Painted",
+        "material": "Cast Iron IS 1030:1998 Grade 280-520 W",
+        "finish": "Grinding, Gauging, Heat Treatment, Painting",
+        "dimensions": "600 x 180 mm",
+        "weight": "As per specification",
+        "applications": ["Railway track foundation", "Load distribution", "Track stability systems"],
+        "specifications": {
+          "standard": "IS 1030:1998 Grade 280-520 W",
+          "heatTreatment": "Required",
+          "finishing": "Grinding, Gauging, Painting",
           "certification": "Railway Approved"
         }
       }

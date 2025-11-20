@@ -59,7 +59,7 @@ export default function AboutPage() {
               Founded in {manufacturingData.about.founded}, Durgapur Infra Projects Pvt. Ltd. was established by industry veterans with decades of experience in the steel and foundry industry.
             </p>
             <p>
-              Our promoters, Mr. Manoj Garg and Mr. Neeraj Garg, bring together {manufacturingData.about.promoters[0].experience} and {manufacturingData.about.promoters[1].experience} of industry experience respectively, ensuring both operational excellence and strategic growth.
+              Our promoters, Mr. Manoj Garg and Mr. Neeraj Garg, bring together {manufacturingData.about.promoters[0].experience} of industry experience, ensuring both operational excellence and strategic growth.
             </p>
             <p>
               Today, we operate a state-of-the-art ductile iron manufacturing facility with a capacity of {manufacturingData.about.capacity}, specializing in precision castings for municipal, railway, and metallurgical applications.

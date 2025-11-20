@@ -178,7 +178,7 @@ export default function RailwayProductDetailPage({ params }: { params: Promise<{
               .filter(p => p.id !== product.id)
               .map((relatedProduct, index) => (
                 <AnimatedText key={relatedProduct.id} delay={index * 0.1}>
-                  <Link href={`/products/railway/${relatedProduct.id}`}>
+                  <Link href={`/products/railway-casting/${relatedProduct.id}`}>
                     <div className="bg-background rounded-lg p-3 border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer flex items-center gap-4">
 
                       {/* Smaller image */}

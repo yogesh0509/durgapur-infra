@@ -68,20 +68,6 @@ export default function CertificationsPage() {
           </AnimatedText>
         </div>
 
-        {/* Certifications Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/certifications.jpg"
-                alt="Quality Certifications"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </AnimatedText>
-        </div>
-
         {/* Certifications */}
         <Section>
           <AnimatedText>

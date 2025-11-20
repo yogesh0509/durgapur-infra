@@ -80,20 +80,6 @@ export default function QualityAssurancePage() {
           </AnimatedText>
         </div>
 
-        {/* Quality Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/quality-assurance.jpg"
-                alt="Quality Assurance Process"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </AnimatedText>
-        </div>
-
         {/* Quality Stages */}
         <Section>
           <AnimatedText>

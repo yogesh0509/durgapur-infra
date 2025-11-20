@@ -7,7 +7,6 @@ import { Layout } from "@/components/layout/layout"
 import { manufacturingData } from "@/lib/data"
 import { ArrowRight, Cpu, Database, BarChart3, CheckCircle, Monitor } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function ITInfrastructurePage() {
   const infrastructure = manufacturingData.infrastructure.it
@@ -75,20 +74,6 @@ export default function ITInfrastructurePage() {
               compliance with international standards. These systems are key pillars of the company's infrastructure, 
               allowing it to operate efficiently across various departments.
             </p>
-          </AnimatedText>
-        </div>
-
-        {/* IT Infrastructure Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/it-infrastructure.jpg"
-                alt="IT Infrastructure"
-                fill
-                className="object-cover"
-              />
-            </div>
           </AnimatedText>
         </div>
 

@@ -49,6 +49,52 @@ export default function ProductsPage() {
           ))}
         </div>
 
+        <Section className="py-16 bg-muted/30">
+          <AnimatedText className="mb-12">
+            <h2 className="font-display text-3xl sm:text-4xl font-light my-4">
+              Municipal Casting Products
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mx-auto">
+              Dive into the detail of our product range for municipal castings that offer reliability, strength and durability.
+            </p>
+          </AnimatedText>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[
+              { name: "Double Triangular Flat Top", image: "1" },
+              { name: "Single Seal Flat Top", image: "2" },
+              { name: "Circular Water Tight", image: "3" },
+              { name: "Multi Top Flat Type Double Triangular", image: "4" },
+              { name: "Multi-Part Recessed Type", image: "5" },
+              { name: "Multiple Manhole Cover", image: "6" },
+              { name: "Hinge Type Gully Grating", image: "7" },
+              { name: "Hinge Type Kerb Gully Grate", image: "8" },
+              { name: "Double Triangular Manhole Cover", image: "9" },
+              { name: "Circular Manhole Cover", image: "10" },
+              { name: "Channel Grating 750mm length", image: "11" },
+              { name: "Flat Top Surface Box", image: "12" }
+            ].map((product, index) => (
+              <AnimatedText key={index} delay={index * 0.05}>
+                <div className="bg-background rounded-lg overflow-hidden border border-border/20 hover:border-primary/30 hover:shadow-sm transition-all duration-200 group">
+                  <div className="aspect-square relative bg-muted">
+                    <Image
+                      src={`/images/dippl/municipal-casting/${product.image}.jpg`}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-display text-sm font-medium group-hover:text-primary transition-colors">
+                      {product.name}
+                    </h3>
+                  </div>
+                </div>
+              </AnimatedText>
+            ))}
+          </div>
+        </Section>
+
         <div className="text-center mt-12">
           <AnimatedText>
             <p className="text-muted-foreground mb-6">

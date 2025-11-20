@@ -48,7 +48,6 @@ export interface ManufacturingData {
     location: string
   }
   expansion: {
-    projectCost: string
     capacity: string
     completion: string
     promotersContribution: string

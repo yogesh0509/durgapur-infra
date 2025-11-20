@@ -87,7 +87,7 @@ export default function InfrastructurePage() {
               Investment in Excellence
             </h2>
             <p className="text-base text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Our ₹7.38 Crore expansion project will enhance our manufacturing capacity to 7,200 MTPA, 
+              Our expansion project will enhance our manufacturing capacity to 7,200 MTPA, 
               ensuring we can meet growing demand while maintaining the highest quality standards.
             </p>
             <Button asChild>

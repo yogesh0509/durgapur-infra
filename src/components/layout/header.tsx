@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Our Story', href: '/about' },
   { name: 'Products', href: '/products', submenu: [
-    { name: 'Railway Castings', href: '/products/railway' },
+    { name: 'Railway Castings', href: '/products/railway-casting' },
     { name: 'Bollards', href: '/products/bollards' },
     { name: 'Hardscape', href: '/products/hardscape' }
   ]},
@@ -43,11 +43,12 @@ export function Header({ className = '', isOverHero = false }: { className?: str
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const isHeaderOnHero = isOverHero && !isScrolled
+
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
       isScrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent",
-      isOverHero && !isScrolled ? "header-on-hero" : "",
       className
     )}>
       <div className="container">
@@ -62,10 +63,16 @@ export function Header({ className = '', isOverHero = false }: { className?: str
               className="w-8 h-8 sm:w-10 sm:h-10"
             />
             <div className="hidden sm:block">
-              <span className="font-display text-xl font-light tracking-wide">
+              <span className={cn(
+                "font-display text-xl font-light tracking-wide transition-colors",
+                isHeaderOnHero ? "text-white" : "text-foreground"
+              )}>
                 DIPL
               </span>
-              <div className="text-xs text-muted-foreground hidden lg:block">
+              <div className={cn(
+                "text-xs hidden lg:block transition-colors",
+                isHeaderOnHero ? "text-white/80" : "text-muted-foreground"
+              )}>
                 Durgapur Infra Projects Pvt. Ltd.
               </div>
             </div>
@@ -82,7 +89,12 @@ export function Header({ className = '', isOverHero = false }: { className?: str
               >
                 {item.submenu ? (
                   <div
-                    className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors cursor-pointer flex items-center space-x-1"
+                    className={cn(
+                      "text-sm font-medium transition-colors cursor-pointer flex items-center space-x-1",
+                      isHeaderOnHero 
+                        ? "text-white/90 hover:text-white" 
+                        : "text-foreground/80 hover:text-foreground"
+                    )}
                   >
                     <span>{item.name}</span>
                     <ChevronDown className="w-4 h-4" />
@@ -90,7 +102,12 @@ export function Header({ className = '', isOverHero = false }: { className?: str
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                    className={cn(
+                      "text-sm font-medium transition-colors",
+                      isHeaderOnHero 
+                        ? "text-white/90 hover:text-white" 
+                        : "text-foreground/80 hover:text-foreground"
+                    )}
                   >
                     {item.name}
                   </Link>
@@ -102,22 +119,14 @@ export function Header({ className = '', isOverHero = false }: { className?: str
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 8 }}
-                    className={cn(
-                      "absolute top-full left-0 w-72 border border-border rounded-lg shadow-lg z-50 pt-2",
-                      isOverHero && !isScrolled ? "bg-white/95 backdrop-blur-sm" : "bg-background"
-                    )}
+                    className="absolute top-full left-0 w-72 bg-white border border-gray-200 rounded-lg shadow-lg z-50 pt-2"
                   >
                     <div className="py-2">
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className={cn(
-                            "block px-4 py-2 text-sm transition-colors",
-                            isOverHero && !isScrolled 
-                              ? "text-gray-800 hover:text-gray-900 hover:bg-gray-100" 
-                              : "text-foreground/80 hover:text-foreground hover:bg-muted"
-                          )}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -133,7 +142,10 @@ export function Header({ className = '', isOverHero = false }: { className?: str
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className={cn(
+              "md:hidden",
+              isHeaderOnHero && "text-white hover:text-white hover:bg-white/10"
+            )}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -148,23 +160,36 @@ export function Header({ className = '', isOverHero = false }: { className?: str
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden border-t border-border/20"
+              className={cn(
+                "md:hidden border-t backdrop-blur-md",
+                isHeaderOnHero 
+                  ? "bg-black/80 border-white/20" 
+                  : "bg-background/95 border-border/20"
+              )}
             >
               <nav className="py-4 space-y-2">
                 {navigation.map((item) => (
                   <div key={item.name}>
                     {item.submenu ? (
                       <div>
-                        <div className="py-2 text-sm font-medium text-foreground/80 flex items-center justify-between">
+                        <div className={cn(
+                          "py-2 text-sm font-medium flex items-center justify-between px-4",
+                          isHeaderOnHero ? "text-white" : "text-foreground/80"
+                        )}>
                           <span>{item.name}</span>
                           <ChevronDown className="w-4 h-4" />
                         </div>
-                        <div className="pl-4 space-y-1">
+                        <div className="pl-8 pr-4 space-y-1">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.name}
                               href={subItem.href}
-                              className="block py-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                              className={cn(
+                                "block py-1 text-xs transition-colors",
+                                isHeaderOnHero 
+                                  ? "text-white/70 hover:text-white" 
+                                  : "text-muted-foreground hover:text-foreground"
+                              )}
                               onClick={() => setIsOpen(false)}
                             >
                               {subItem.name}
@@ -175,7 +200,12 @@ export function Header({ className = '', isOverHero = false }: { className?: str
                     ) : (
                       <Link
                         href={item.href}
-                        className="block py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                        className={cn(
+                          "block py-2 px-4 text-sm font-medium transition-colors",
+                          isHeaderOnHero 
+                            ? "text-white/90 hover:text-white" 
+                            : "text-foreground/80 hover:text-foreground"
+                        )}
                         onClick={() => setIsOpen(false)}
                       >
                         {item.name}

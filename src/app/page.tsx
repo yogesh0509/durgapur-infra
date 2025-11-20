@@ -34,7 +34,7 @@ export default function Home() {
   }
 
   return (
-    <Layout headerClassName={isHero ? 'header-on-hero' : ''} isOverHero={isHero}>
+    <Layout isOverHero={isHero}>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex flex-col justify-center items-center overflow-hidden py-12 sm:py-20">
         {/* Background Image */}

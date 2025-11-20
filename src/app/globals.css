@@ -180,19 +180,3 @@
 .animate-slide-in-left { animation: slideInLeft 0.6s ease-out; }
 .animate-slide-in-right { animation: slideInRight 0.6s ease-out; }
 .animate-pulse-slow { animation: pulse 2s ease-in-out infinite; }
-
-.header-on-hero {
-  color: #fff !important;
-}
-.header-on-hero .text-foreground,
-.header-on-hero .text-foreground\/80,
-.header-on-hero .text-muted-foreground,
-.header-on-hero nav a,
-.header-on-hero .font-display,
-.header-on-hero p {
-  color: #fff !important;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-}
-.header-on-hero .hover\:text-foreground:hover {
-  color: #fff !important;
-}
