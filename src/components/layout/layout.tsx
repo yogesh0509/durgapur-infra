@@ -54,7 +54,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
               <div className="text-xs text-muted-foreground mb-4 space-y-1">
                 <p>CIN: U26999WB2016PTC218534</p>
                 <p>PAN: AAGCD0726K</p>
-                <p>Incorporated: 07 December 2016</p>
+                <p>Incorporated: 07 December 2025</p>
               </div>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon" asChild>
@@ -64,7 +64,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                   </Link>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <Link href="mailto:info@dippl.in">
+                  <Link href="mailto:info@durgapurinfra.co.in">
                     <Mail className="h-5 w-5" />
                     <span className="sr-only">Email</span>
                   </Link>
@@ -118,11 +118,11 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="mailto:info@dippl.in"
+                    href="mailto:info@durgapurinfra.co.in"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center"
                   >
                     <Mail className="h-4 w-4 mr-2" />
-                    info@dippl.in
+                    info@durgapurinfra.co.in
                   </Link>
                 </li>
                 <li>

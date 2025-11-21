@@ -4,13 +4,33 @@ import { AnimatedText } from "@/components/ui/animated-text"
 import { Button } from "@/components/ui/button"
 import { Section } from "@/components/ui/section"
 import { ProjectCard } from "@/components/ui/project-card"
-import { projects, services, processSteps, brandValues, manufacturingData } from "@/lib/data"
+import { projects, processSteps, manufacturingData } from "@/lib/data"
 import { Layout } from "@/components/layout/layout"
-import { ArrowRight, ArrowUpRight, MessageCircle, Ruler, PenTool, Hammer, CheckCircle, Target, Cog, Award, Users, Building2, Train } from "lucide-react"
+import { ArrowRight, ArrowUpRight, MessageCircle, Ruler, PenTool, Hammer, CheckCircle, MapPin, Building2, ClipboardCheck, Package, PhoneCall } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 import { useEffect, useState } from "react"
 import React from "react"
+
+const faqItems = [
+  {
+    question: "What makes Durgapur Infra Projects Pvt. Ltd. a preferred ductile iron casting partner?",
+    answer: "We combine a 7,200 MTPA ductile iron facility in Durgapur with spectrometer testing, pattern development, and logistics support to deliver consistent municipal and railway-grade castings."
+  },
+  {
+    question: "Which industries do you serve?",
+    answer: "Our core focus spans municipal infrastructure, metro rail, industrial OEMs, automobile suppliers, and hardscape developers seeking durable ductile iron components."
+  },
+  {
+    question: "Can you support custom designs or short production runs?",
+    answer: "Yes. Our engineering team collaborates on CAD/CAM, tooling, and rapid prototyping to match unique load, sealing, or branding requirements without compromising lead times."
+  },
+  {
+    question: "How do I engage the team for a new project?",
+    answer: "Share drawings, load data, or reference samples via info@durgapurinfra.co.in or call +91-9609969999. We respond with feasibility, lead time, and pricing tailored to your scope."
+  }
+]
 
 export default function Home() {
   const [isHero, setIsHero] = useState(true);
@@ -33,8 +53,22 @@ export default function Home() {
     CheckCircle: <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />,
   }
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map(item => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  }
+
   return (
-    <Layout isOverHero={isHero}>
+    <>
+      <Layout isOverHero={isHero}>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex flex-col justify-center items-center overflow-hidden py-12 sm:py-20">
         {/* Background Image */}
@@ -163,5 +197,10 @@ export default function Home() {
         </AnimatedText>
       </Section>
     </Layout>
+
+    <Script id="faq-schema" type="application/ld+json">
+      {JSON.stringify(faqSchema)}
+    </Script>
+    </>
   )
 }

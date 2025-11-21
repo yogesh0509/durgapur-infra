@@ -1,11 +1,11 @@
 {
-  "name": "omeraa Studio",
-  "short_name": "Omeraa",
-  "description": "Interior Design & Architecture Studio - Designs That Breathe",
+  "name": "Durgapur Infra Projects Pvt. Ltd.",
+  "short_name": "Durgapur Infra",
+  "description": "Precision Ductile Iron Manufacturing for Modern Infrastructure. Specializing in manhole covers, automobile parts, and custom castings.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F5F2ED",
-  "theme_color": "#3C3C3C",
+  "background_color": "#FFFFFF",
+  "theme_color": "#312e81",
   "icons": [
     {
       "src": "/images/brand/logo.png",

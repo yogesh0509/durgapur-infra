@@ -28,17 +28,17 @@ export default function ManufacturingInfrastructurePage() {
   const meltingEquipment = [
     {
       title: "Induction Furnaces",
-      description: "1 MT Inductotherm iron melting furnace with two crucibles and 2 MT Inductotherm iron melting furnace with two crucibles. Two cupola furnaces with 5 MT/hr casting capacity. Ladle preheater included.",
+      description: "1 MT induction furnace integrated with a treatment ladle and pouring ladles, along with 2 MT Inductotherm iron melting furnace with twin crucibles and two cupola furnaces offering 5 MT/hr casting capacity. Includes ladle preheating system.",
       icon: <Factory className="w-8 h-8 text-primary" />
     },
     {
       title: "Sand Plant for Machine Moulding",
-      description: "30 TPH capacity RHINO make sand plant using Compact Sand Technology from FONDARC. Simple sand system with three belt conveyors, no pit, no bucket elevator. RTC Series Online Sand Control for 100% batch control with data logging.",
+      description: "220-ton capacity sand plant with a 64-ton per hour green sand preparation system. High-quality green sand is produced using a state-of-the-art fully automatic setup, featuring a 30 TPH RHINO sand plant based on Compact Sand Technology from FONDARC. The system includes three belt conveyors with no pit or bucket elevator, supported by RTC Series Online Sand Control for complete batch monitoring and data logging.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
       title: "Moulding Facilities",
-      description: "RHINO make FM3 High-Pressure Multi-Piston Moulding Machine Line with 25 boxes/hr speed. 64 pallet cars with 1200mm x 1300mm mould boxes. Automatic mould handling and punch-out system with separate hand moulding line.",
+      description: "VME F16 high-pressure multi-piston moulding machine with a production speed of 30 moulds per hour. The setup is supported by over 150 pallet cars of 1000 x 1000 mm size, with heights ranging from 400 to 800 mm, allowing flexible production tailored to specific requirements. The line also incorporates RHINO FM3 high-pressure multi-piston moulding capability at 25 boxes per hour, 64 pallet cars with 1200 x 1300 mm boxes, and includes automatic mould handling, punch-out system, and a separate hand moulding line.",
       icon: <Settings className="w-8 h-8 text-primary" />
     },
     {
@@ -48,12 +48,12 @@ export default function ManufacturingInfrastructurePage() {
     },
     {
       title: "Fettling and Paint",
-      description: "2 automatic shot blast machines (hanger type), various grinding and cutting machines. Wenger-make spray paint machine for epoxy coating and bitumen paint coating.",
+      description: "1 automatic shot blast machines (hanger type), various grinding and cutting machines. Wenger-make spray paint machine for epoxy coating and bitumen paint coating.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
       title: "Material Handling",
-      description: "1 x 7.0-tonne EOT crane, 4 x 5.0-tonne EOT cranes, 1 x 2.0-tonne magnet crane, 2 x 2.0-tonne forklifts, 10 x 1-tonne to 3-tonne EOT crane hoists. 18 weighing scales up to 2-tonne capacity. Semi-automatic liquid hot metal pouring system with metal weight measuring.",
+      description: "The factory operates multiple EOT cranes with varied load-bearing capacities to ensure smooth and efficient movement across all stages. From mould handling to metal pouring and final finishing, the entire workflow is crane-assisted. The setup includes 7-tonne, 5-tonne and 1–3-tonne EOT cranes, a 2-tonne magnet crane, forklifts for auxiliary handling, and 18 weighing scales up to 2 tonnes. A semi-automatic liquid metal pouring system with integrated metal weight measurement ensures accurate and consistent pouring operations.",
       icon: <Zap className="w-8 h-8 text-primary" />
     }
   ]
@@ -62,8 +62,7 @@ export default function ManufacturingInfrastructurePage() {
     "ISO 9001:2015 certification for quality management",
     "BSI Kitemark EN124-2:2015 for international standards compliance",
     "ISO 45001:2018 for occupational health and safety",
-    "ISO 14001:2015 for environmental management",
-    "Accredited by TÜV SÜD"
+    "ISO 14001:2015 for environmental management"
   ]
 
   const specialFacilities = [
@@ -90,9 +89,9 @@ export default function ManufacturingInfrastructurePage() {
               {infrastructure.title}
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              We manufacture products in accordance with relevant international market standards. 
-              Our manufacturing processes are the backbone of our operations and give us immense confidence, from melting 
-              iron to delivery of castings. We guarantee consistent product reliability and durability, meeting the highest 
+              We manufacture products in accordance with relevant international market standards.
+              Our manufacturing processes are the backbone of our operations and give us immense confidence, from melting
+              iron to delivery of castings. We guarantee consistent product reliability and durability, meeting the highest
               industry standards.
             </p>
           </AnimatedText>
@@ -126,7 +125,7 @@ export default function ManufacturingInfrastructurePage() {
               Manufacturing Equipment & Facilities
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {meltingEquipment.map((item, index) => (
               <AnimatedText key={item.title} delay={index * 0.1}>
@@ -153,7 +152,7 @@ export default function ManufacturingInfrastructurePage() {
               Special Facilities
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {specialFacilities.map((facility, index) => (
               <AnimatedText key={facility.title} delay={index * 0.1}>
@@ -173,7 +172,7 @@ export default function ManufacturingInfrastructurePage() {
               Key Features
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {infrastructure.features.map((feature, index) => (
               <AnimatedText key={index} delay={index * 0.1}>
@@ -195,15 +194,11 @@ export default function ManufacturingInfrastructurePage() {
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
                 Current Capacity & Expansion
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-4xl font-bold text-primary mb-2">7,200</div>
                   <div className="text-muted-foreground">MTPA Capacity</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-primary mb-2">April 2025</div>
-                  <div className="text-muted-foreground">Expansion Completion</div>
                 </div>
               </div>
             </AnimatedText>
@@ -217,7 +212,7 @@ export default function ManufacturingInfrastructurePage() {
               Certifications & Standards
             </h2>
           </AnimatedText>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
               <AnimatedText key={cert} delay={index * 0.1}>
@@ -232,28 +227,6 @@ export default function ManufacturingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Utilities */}
-        <Section>
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Utilities & Support Systems
-            </h2>
-          </AnimatedText>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {Object.entries(manufacturingData.utilities).map(([key, value], index) => (
-              <AnimatedText key={key} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20 text-center">
-                  <h3 className="font-display text-lg mb-3 capitalize">
-                    {key.replace(/([A-Z])/g, ' $1').trim()}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{value}</p>
-                </div>
-              </AnimatedText>
-            ))}
-          </div>
-        </Section>
-
         {/* CTA */}
         <Section className="text-center">
           <AnimatedText>
@@ -261,7 +234,7 @@ export default function ManufacturingInfrastructurePage() {
               Partner with Our Manufacturing Excellence
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Our state-of-the-art manufacturing infrastructure ensures consistent quality and timely delivery. 
+            Located in Durgapur, our state-of-the-art manufacturing infrastructure is engineered for precision, reliability and scale.
               Contact us to discuss your casting requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

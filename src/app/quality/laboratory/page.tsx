@@ -64,20 +64,6 @@ export default function LaboratoryPage() {
           </AnimatedText>
         </div>
 
-        {/* Laboratory Image */}
-        <div>
-          <AnimatedText>
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/dippl/manufacturing/manufacturing-1.jpeg"
-                alt="Metallurgical Laboratory"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </AnimatedText>
-        </div>
-
         {/* Laboratory Equipment */}
         <Section>
           <AnimatedText>

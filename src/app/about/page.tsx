@@ -41,7 +41,7 @@ export default function AboutPage() {
             className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-md"
           >
             <Image
-              src="/images/dippl/manufacturing/foundry-facility.jpg"
+              src="/images/dippl/manufacturing/manufacturing-2.jpeg"
               alt="DIPL Manufacturing Facility"
               fill
               className="object-cover"

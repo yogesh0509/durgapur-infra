@@ -228,9 +228,9 @@ ${message}
               <h2 className="font-display text-xl sm:text-2xl mb-4 sm:mb-6">Connect With Us</h2>
               <div className="flex space-x-3 sm:space-x-4">
                 <Button variant="outline" size="icon" asChild>
-                  <Link href="https://linkedin.com" target="_blank">
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
+                  <Link href="info@durgapurinfra.co.in" target="_blank">
+                    <Mail className="h-5 w-5" />
+                    <span className="sr-only">Email</span>
                   </Link>
                 </Button>
               </div>

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.omeraa-studios.com/sitemap.xml
+Sitemap: https://durgapurinfra.co.in/sitemap.xml
