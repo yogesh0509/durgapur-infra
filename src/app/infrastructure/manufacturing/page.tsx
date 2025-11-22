@@ -33,12 +33,12 @@ export default function ManufacturingInfrastructurePage() {
     },
     {
       title: "Sand Plant for Machine Moulding",
-      description: "220-ton capacity sand plant with a 64-ton per hour green sand preparation system. High-quality green sand is produced using a state-of-the-art fully automatic setup, featuring a 30 TPH RHINO sand plant based on Compact Sand Technology from FONDARC. The system includes three belt conveyors with no pit or bucket elevator, supported by RTC Series Online Sand Control for complete batch monitoring and data logging.",
+      description: "220Tn capacity Sand plant with a 64Tn per hr green sand preparation capacity. High quality Green sand is prepared using a star of the art fully automatic Sand plant.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
       title: "Moulding Facilities",
-      description: "VME F16 high-pressure multi-piston moulding machine with a production speed of 30 moulds per hour. The setup is supported by over 150 pallet cars of 1000 x 1000 mm size, with heights ranging from 400 to 800 mm, allowing flexible production tailored to specific requirements. The line also incorporates RHINO FM3 high-pressure multi-piston moulding capability at 25 boxes per hour, 64 pallet cars with 1200 x 1300 mm boxes, and includes automatic mould handling, punch-out system, and a separate hand moulding line.",
+      description: "VME F16 High Pressure Multi piston moulding machine with a 30 Moulds/ hr speed. We have more than 150+ pallet cars of 1000*1000 size with hight ranging from 400 to 800 enabling us to produce according to your requirements.",
       icon: <Settings className="w-8 h-8 text-primary" />
     },
     {
@@ -53,7 +53,7 @@ export default function ManufacturingInfrastructurePage() {
     },
     {
       title: "Material Handling",
-      description: "The factory operates multiple EOT cranes with varied load-bearing capacities to ensure smooth and efficient movement across all stages. From mould handling to metal pouring and final finishing, the entire workflow is crane-assisted. The setup includes 7-tonne, 5-tonne and 1–3-tonne EOT cranes, a 2-tonne magnet crane, forklifts for auxiliary handling, and 18 weighing scales up to 2 tonnes. A semi-automatic liquid metal pouring system with integrated metal weight measurement ensures accurate and consistent pouring operations.",
+      description: "The factory uses multiple EOT cranes with various Load bearing capacity for a smooth operation. From Mould handling, Metal pouring and final finishing everything is conveyed using cranes.",
       icon: <Zap className="w-8 h-8 text-primary" />
     }
   ]
@@ -68,7 +68,7 @@ export default function ManufacturingInfrastructurePage() {
   const specialFacilities = [
     {
       title: "Despatch Facilities",
-      description: "In-house container stuffing facility with 2 loading ramps and 1 in-house weighbridge for efficient logistics and shipping operations."
+      description: "In-house container stuffing facility with a loading ramps and in-house weighbridge for efficient logistics and shipping operations."
     },
     {
       title: "Quality Assurance",
