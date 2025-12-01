@@ -53,7 +53,6 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
               </p>
               <div className="text-xs text-muted-foreground mb-4 space-y-1">
                 <p>CIN: U26999WB2016PTC218534</p>
-                <p>PAN: AAGCD0726K</p>
                 <p>Incorporated: 07 December 2025</p>
               </div>
               <div className="flex space-x-4">
@@ -136,7 +135,7 @@ export function Layout({ children, headerClassName, isOverHero }: LayoutProps) {
                 </li>
                 <li className="text-xs text-muted-foreground">
                   <div className="font-medium mb-1">Registered Office:</div>
-                  <div>6, Brabourne Road, 3rd Floor, Room 305–306, Kolkata – 700001</div>
+                  <div>11/A MAHARSHI DEBENDRA ROAD, 3rd FLOOR, ROOM NO.-4, Barabazar, Kolkata-700007, West Bengal, India,</div>
                 </li>
                 <li className="text-xs text-muted-foreground">
                   <div className="font-medium mb-1">Factory:</div>

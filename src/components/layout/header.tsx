@@ -25,7 +25,7 @@ const navigation = [
   { name: 'Quality', href: '/quality', submenu: [
     { name: 'Quality Assurance', href: '/quality/assurance' },
     { name: 'Our Laboratory', href: '/quality/laboratory' },
-    { name: 'Certifications', href: '/quality/certifications' }
+    // { name: 'Certifications', href: '/quality/certifications' }
   ]},
   { name: 'Contact Us', href: '/contact' },
 ]

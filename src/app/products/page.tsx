@@ -25,7 +25,7 @@ export default function ProductsPage() {
             Our Products
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl sm:max-w-2xl mx-auto">
-            Precision-engineered ductile iron castings for diverse industrial applications. Each product meets the highest quality standards and specifications.
+            Precision-engineered ductile iron castings for diverse industrial applications—each product meets the highest quality standards from Durgapur, India.
           </p>
         </AnimatedText>
 
@@ -62,7 +62,7 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
               { name: "Double Triangular Flat Top", image: "1" },
-              { name: "Single Seal Flat Top", image: "2" },
+              { name: "Manhole Covers", image: "2" },
               { name: "Circular Water Tight", image: "3" },
               { name: "Multi Top Flat Type Double Triangular", image: "4" },
               { name: "Multi-Part Recessed Type", image: "5" },

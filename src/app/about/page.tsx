@@ -54,16 +54,17 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-4 sm:space-y-6 text-muted-foreground"
           >
-            <h2 className="font-display text-2xl sm:text-3xl mb-2">Our Journey</h2>
+            <h2 className="font-display text-2xl sm:text-3xl mb-2">Our Mission</h2>
             <p>
-              Founded in {manufacturingData.about.founded}, Durgapur Infra Projects Pvt. Ltd. was established by industry veterans with decades of experience in the steel and foundry industry.
+              At DIPL, we are committed to delivering precision-engineered ductile iron castings that meet the highest industry standards. Through continuous innovation, quality excellence, and customer partnership, we aim to be the preferred supplier for municipal, railway, and metallurgical casting solutions.            </p>
+            <p>
+              Our commitment extends beyond our own production line. We are dedicated to providing every customer with the perfect casting solution, whether manufactured at our state-of-the-art in-house facility or sourced through our robust network. We actively partner with India's leading manufacturers, leveraging our expertise and rigorous quality standards to ensure your specific requirements are met.
             </p>
             <p>
-              Our promoters, Mr. Manoj Garg and Mr. Neeraj Garg, bring together {manufacturingData.about.promoters[0].experience} of industry experience, ensuring both operational excellence and strategic growth.
+              DIPL acts as your comprehensive, single-step solution to the entire Indian foundry landscape. We simplify the process of importing and sourcing high-quality castings, ensuring that all your requirements—from specialized production to logistics—are handled seamlessly and efficiently shipped from India.
             </p>
             <p>
-              Today, we operate a state-of-the-art ductile iron manufacturing facility with a capacity of {manufacturingData.about.capacity}, specializing in precision castings for municipal, railway, and metallurgical applications.
-            </p>
+              Our mission is to contribute to India's infrastructure development and serve global partners with reliable, durable, and high-performance casting products.            </p>
           </motion.div>
         </div>
       </Section>

@@ -127,7 +127,7 @@ export default function ITInfrastructurePage() {
         </Section>
 
         {/* Certifications */}
-        <Section>
+        {/* <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
@@ -148,7 +148,7 @@ export default function ITInfrastructurePage() {
               </div>
             </AnimatedText>
           </div>
-        </Section>
+        </Section> */}
 
         {/* CTA */}
         <Section className="text-center">

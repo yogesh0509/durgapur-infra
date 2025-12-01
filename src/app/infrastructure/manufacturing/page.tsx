@@ -28,32 +28,32 @@ export default function ManufacturingInfrastructurePage() {
   const meltingEquipment = [
     {
       title: "Induction Furnaces",
-      description: "1 MT induction furnace integrated with a treatment ladle and pouring ladles, along with 2 MT Inductotherm iron melting furnace with twin crucibles and two cupola furnaces offering 5 MT/hr casting capacity. Includes ladle preheating system.",
+      description: "Our facility is equipped with a 1-Metric-Ton (MT) induction furnace that feeds a dedicated treatment ladle for precise metallurgical adjustments. Following treatment, the molten material is transferred to various pouring ladles to ensure a seamless and efficient casting.",
       icon: <Factory className="w-8 h-8 text-primary" />
     },
     {
       title: "Sand Plant for Machine Moulding",
-      description: "220Tn capacity Sand plant with a 64Tn per hr green sand preparation capacity. High quality Green sand is prepared using a star of the art fully automatic Sand plant.",
+      description: "A state-of-the-art, fully automatic sand plant powers the machine moulding process, providing a 220-tonne capacity. It ensures the consistent production of high-quality green sand with a preparation throughput of 64 tonnes per hour.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
       title: "Moulding Facilities",
-      description: "VME F16 High Pressure Multi piston moulding machine with a 30 Moulds/ hr speed. We have more than 150+ pallet cars of 1000*1000 size with hight ranging from 400 to 800 enabling us to produce according to your requirements.",
+      description: "We utilize a VME F16 High-Pressure Multi-Piston Moulding Machine capable of producing 30 moulds per hour. To ensure maximum flexibility, our facilities include more than 150 pallet cars (sized 1000×1000 mm) with adjustable heights from 400 mm to 800 mm. This extensive setup enables us to efficiently tailor production to your specific needs.",
       icon: <Settings className="w-8 h-8 text-primary" />
     },
     {
       title: "Pattern & Core Shop",
-      description: "CO2 process, systematic pattern storage racks, in-house pattern repairing and maintenance. Equipped with radial drilling machine (50mm capacity), surface plate, measuring tools, gauges, and lathe machine with 8-foot bed.",
+      description: "The Pattern & Core Shop handles systematic in-house core manufacturing using the CO2 process and dedicated core maker machinery. We are fully equipped for the manufacture, repair, and maintenance of all pattern types. Our modern machinery ensures a high-quality, seamless production of both patterns and cores.",
       icon: <Settings className="w-8 h-8 text-primary" />
     },
     {
       title: "Fettling and Paint",
-      description: "1 automatic shot blast machines (hanger type), various grinding and cutting machines. Wenger-make spray paint machine for epoxy coating and bitumen paint coating.",
+      description: "The Fettling and Paint process begins with efficient cleaning using an automatic hanger-type shot blast machine. Precision finishing is achieved with various grinding and cutting machines. For protective final coatings, we employ a spray paint machine for both epoxy and bitumen applications.",
       icon: <Cog className="w-8 h-8 text-primary" />
     },
     {
       title: "Material Handling",
-      description: "The factory uses multiple EOT cranes with various Load bearing capacity for a smooth operation. From Mould handling, Metal pouring and final finishing everything is conveyed using cranes.",
+      description: "Our factory ensures smooth and efficient operations through the extensive use of multiple Electric Overhead Traveling (EOT) cranes, each with varying load-bearing capacities. These cranes are integral to the entire production flow, handling everything from mould transportation and metal pouring to final finishing and conveyance.",
       icon: <Zap className="w-8 h-8 text-primary" />
     }
   ]
@@ -68,11 +68,11 @@ export default function ManufacturingInfrastructurePage() {
   const specialFacilities = [
     {
       title: "Despatch Facilities",
-      description: "In-house container stuffing facility with a loading ramps and in-house weighbridge for efficient logistics and shipping operations."
+      description: "Our dispatch area is fully equipped for efficient logistics and shipping operations. We offer in-house container stuffing facilities, complete with loading ramps and an integrated weighbridge, ensuring seamless control over shipping weights and logistics."
     },
     {
       title: "Quality Assurance",
-      description: "All facilities certified to international standards ensuring consistent quality across all operations from raw materials to final dispatch."
+      description: "We guarantee consistent quality from raw material procurement to final product dispatch, as all our facilities are certified to meet international standards."
     }
   ]
 
@@ -187,26 +187,8 @@ export default function ManufacturingInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Capacity & Expansion */}
-        <Section>
-          <div className="bg-secondary/5 rounded-xl p-12">
-            <AnimatedText>
-              <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
-                Current Capacity & Expansion
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <div className="text-4xl font-bold text-primary mb-2">7,200</div>
-                  <div className="text-muted-foreground">MTPA Capacity</div>
-                </div>
-              </div>
-            </AnimatedText>
-          </div>
-        </Section>
-
         {/* Certifications */}
-        <Section>
+        {/* <Section>
           <AnimatedText>
             <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
               Certifications & Standards
@@ -225,7 +207,7 @@ export default function ManufacturingInfrastructurePage() {
               </AnimatedText>
             ))}
           </div>
-        </Section>
+        </Section> */}
 
         {/* CTA */}
         <Section className="text-center">

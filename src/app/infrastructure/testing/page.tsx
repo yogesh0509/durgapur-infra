@@ -303,7 +303,7 @@ export default function TestingInfrastructurePage() {
         </Section>
 
         {/* Certifications */}
-        <Section>
+        {/* <Section>
           <div className="bg-secondary/5 rounded-xl p-12">
             <AnimatedText>
               <h2 className="font-display text-3xl sm:text-4xl font-light mb-8 text-center">
@@ -322,7 +322,7 @@ export default function TestingInfrastructurePage() {
               </div>
             </AnimatedText>
           </div>
-        </Section>
+        </Section> */}
 
         {/* Key Features */}
         <Section>

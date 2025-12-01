@@ -128,27 +128,27 @@ export default function DesignInfrastructurePage() {
           </div>
         </Section>
 
-        {/* Certifications */}
-        <Section>
-          <AnimatedText>
-            <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
-              Certifications
-            </h2>
-          </AnimatedText>
+        {/* Certifications
+        // <Section>
+        //   <AnimatedText>
+        //     <h2 className="font-display text-3xl sm:text-4xl font-light mb-12 text-center">
+        //       Certifications
+        //     </h2>
+        //   </AnimatedText>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <AnimatedText key={cert} delay={index * 0.1}>
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
-                    <span className="text-muted-foreground">{cert}</span>
-                  </div>
-                </div>
-              </AnimatedText>
-            ))}
-          </div>
-        </Section>
+        //   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        //     {certifications.map((cert, index) => (
+        //       <AnimatedText key={cert} delay={index * 0.1}>
+        //         <div className="bg-background rounded-xl p-6 shadow-sm border border-border/20">
+        //           <div className="flex items-center">
+        //             <CheckCircle className="w-6 h-6 text-accent mr-4 flex-shrink-0" />
+        //             <span className="text-muted-foreground">{cert}</span>
+        //           </div>
+        //         </div>
+        //       </AnimatedText>
+        //     ))}
+        //   </div>
+        // </Section> */}
 
         {/* CTA */}
         <Section className="text-center">
