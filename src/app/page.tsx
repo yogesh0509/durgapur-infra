@@ -134,7 +134,7 @@ export default function Home() {
             {/* Add your custom static card here */}
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/images/dippl/municipal-casting/2.jpg"
+                src="/images/dippl/municipal-casting/6.jpg"
                 alt="Manhole Covers"
                 className="object-cover w-full h-full"
               />

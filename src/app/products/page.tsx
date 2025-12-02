@@ -62,15 +62,15 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
               { name: "Double Triangular Flat Top", image: "1" },
-              { name: "Manhole Covers", image: "2" },
+              // { name: "Manhole Covers", image: "2" },
               { name: "Circular Water Tight", image: "3" },
               { name: "Multi Top Flat Type Double Triangular", image: "4" },
               { name: "Multi-Part Recessed Type", image: "5" },
               { name: "Multiple Manhole Cover", image: "6" },
               { name: "Hinge Type Gully Grating", image: "7" },
               { name: "Hinge Type Kerb Gully Grate", image: "8" },
-              { name: "Double Triangular Manhole Cover", image: "9" },
-              { name: "Circular Manhole Cover", image: "10" },
+              // { name: "Double Triangular Manhole Cover", image: "9" },
+              // { name: "Circular Manhole Cover", image: "10" },
               { name: "Channel Grating 750mm length", image: "11" },
               { name: "Flat Top Surface Box", image: "12" }
             ].map((product, index) => (
@@ -81,7 +81,7 @@ export default function ProductsPage() {
                       src={`/images/dippl/municipal-casting/${product.image}.jpg`}
                       alt={product.name}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover scale-[1.06] object-[5%_5%] group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-4">
